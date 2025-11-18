@@ -7,17 +7,51 @@ const GEOAPIFY_ROUTING_URL = 'https://api.geoapify.com/v1/routing';
 /**
  * Search for places using Geoapify Places API
  */
-export async function searchPlaces(query, limit = 20) {
+export async function searchPlaces(query, limit = 100) {  // Increased from 20 to 100 for AI ranking
   try {
-    const response = await axios.get(`${GEOAPIFY_BASE_URL}/places`, {
-      params: {
-        categories: 'tourism',
-        filter: `circle:${query.center.lon},${query.center.lat},${query.radius || 5000}`,
-        text: query.text,
-        limit: limit,
-        apiKey: GEOAPIFY_API_KEY
-      }
-    });
+    // Build search parameters
+    const params = {
+      filter: `circle:${query.center.lon},${query.center.lat},${query.radius || 5000}`,
+      limit: limit,
+      apiKey: GEOAPIFY_API_KEY
+    };
+
+    // Add text search if provided
+    if (query.text) {
+      params.text = query.text;
+    }
+
+    // Use AI-generated Geoapify category if available, otherwise use fallback mapping
+    let categories;
+    if (query.geoapifyCategory) {
+      // Use the category from AI parsing (e.g., "catering.restaurant.tapas,catering.bar")
+      categories = query.geoapifyCategory;
+      console.log('Using AI-generated category:', categories);
+    } else {
+      // Fallback category mapping for when AI parsing fails
+      const categoryMap = {
+        'tapas bars': 'catering.restaurant.tapas,catering.bar',
+        'restaurants': 'catering.restaurant',
+        'bars': 'catering.bar,catering.pub',
+        'museums': 'entertainment.museum',
+        'churches': 'religion.place_of_worship.christianity',
+        'temples': 'religion.place_of_worship.buddhism',
+        'mosques': 'religion.place_of_worship.islam',
+        'historic sites': 'tourism.sights,heritage',
+        'parks': 'leisure.park',
+        'viewpoints': 'tourism.attraction.viewpoint',
+        'markets': 'commercial.marketplace',
+        'shopping': 'commercial.shopping_mall'
+      };
+      categories = categoryMap[query.placeType?.toLowerCase()] || 'tourism.attraction,tourism.sights';
+      console.log('Using fallback category mapping:', categories);
+    }
+
+    params.categories = categories;
+
+    console.log('Geoapify search params:', params);
+
+    const response = await axios.get(`${GEOAPIFY_BASE_URL}/places`, { params });
 
     return response.data.features.map(feature => ({
       id: feature.properties.place_id,
@@ -39,16 +73,19 @@ export async function searchPlaces(query, limit = 20) {
  */
 export async function geocodeLocation(locationString) {
   try {
+    console.log(`Geocoding location: "${locationString}"`);
+
     const response = await axios.get('https://api.geoapify.com/v1/geocode/search', {
       params: {
         text: locationString,
-        limit: 1,
+        limit: 5, // Get top 5 results to be safer
         apiKey: GEOAPIFY_API_KEY
       }
     });
 
     if (response.data.features && response.data.features.length > 0) {
       const feature = response.data.features[0];
+      console.log(`Geocoded to: ${feature.properties.formatted} (${feature.geometry.coordinates[1]}, ${feature.geometry.coordinates[0]})`);
       return {
         lat: feature.geometry.coordinates[1],
         lon: feature.geometry.coordinates[0],
@@ -69,26 +106,48 @@ export async function geocodeLocation(locationString) {
  */
 export async function calculateOptimizedRoute(waypoints) {
   try {
-    // Format waypoints for the routing API
+    // Format waypoints for the routing API (latitude,longitude format)
     const waypointsParam = waypoints
-      .map(wp => `${wp.longitude},${wp.latitude}`)
+      .map(wp => `${wp.latitude},${wp.longitude}`)
       .join('|');
 
     const response = await axios.get(`${GEOAPIFY_ROUTING_URL}`, {
       params: {
         waypoints: waypointsParam,
         mode: 'walk',
+        details: 'elevation',  // Request elevation data
         apiKey: GEOAPIFY_API_KEY
       }
     });
 
     if (response.data.features && response.data.features.length > 0) {
       const route = response.data.features[0];
+
+      // Calculate total elevation gain from all legs
+      let totalElevationGain = 0;
+      let maxElevation = 0;
+      let minElevation = Infinity;
+
+      if (route.properties.legs) {
+        route.properties.legs.forEach(leg => {
+          leg.steps?.forEach(step => {
+            if (step.elevation_gain) totalElevationGain += step.elevation_gain;
+            if (step.max_elevation) maxElevation = Math.max(maxElevation, step.max_elevation);
+            if (step.min_elevation) minElevation = Math.min(minElevation, step.min_elevation);
+          });
+        });
+      }
+
       return {
         distance: route.properties.distance, // in meters
         time: route.properties.time, // in seconds
         geometry: route.geometry,
-        legs: route.properties.legs
+        legs: route.properties.legs,
+        elevation: {
+          gain: Math.round(totalElevationGain),
+          max: Math.round(maxElevation),
+          min: minElevation === Infinity ? 0 : Math.round(minElevation)
+        }
       };
     }
 

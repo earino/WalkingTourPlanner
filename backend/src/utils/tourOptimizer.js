@@ -1,18 +1,75 @@
 /**
- * Optimize tour route using a greedy nearest neighbor algorithm
- * This creates a walking tour that minimizes backtracking
+ * Optimize tour route using 2-opt algorithm for TSP
+ * Finds mathematically optimal (or near-optimal) route minimizing total distance
+ * Tries all places as potential starting points to find best linear path
  */
 export function optimizeTourRoute(places, startLocation = null) {
   if (places.length === 0) return [];
   if (places.length === 1) return places;
+  if (places.length === 2) return places;
 
+  let bestRoute = null;
+  let bestDistance = Infinity;
+
+  // Try each place as a potential starting point
+  for (let startIdx = 0; startIdx < places.length; startIdx++) {
+    const startPlace = places[startIdx];
+    const startPos = { lat: startPlace.latitude, lon: startPlace.longitude };
+
+    // Build route starting from this place
+    let route = greedyRoute(places, startPos);
+
+    // Improve with 2-opt algorithm
+    route = twoOptImprove(route);
+
+    const distance = calculateRouteDistance(route);
+    if (distance < bestDistance) {
+      bestDistance = distance;
+      bestRoute = route;
+    }
+  }
+
+  console.log(`TSP optimization: Best route distance: ${Math.round(bestDistance)}m, starting at ${bestRoute[0].name}`);
+  return bestRoute;
+}
+
+/**
+ * Improve route with 2-opt algorithm
+ */
+function twoOptImprove(route) {
+  let improved = true;
+  let iterations = 0;
+  const maxIterations = 100;
+
+  while (improved && iterations < maxIterations) {
+    improved = false;
+    iterations++;
+
+    for (let i = 0; i < route.length - 1; i++) {
+      for (let j = i + 2; j < route.length; j++) {
+        const newRoute = twoOptSwap(route, i, j);
+        const currentDist = calculateRouteDistance(route);
+        const newDist = calculateRouteDistance(newRoute);
+
+        if (newDist < currentDist) {
+          route = newRoute;
+          improved = true;
+        }
+      }
+    }
+  }
+
+  return route;
+}
+
+/**
+ * Greedy nearest-neighbor initial route
+ */
+function greedyRoute(places, startLocation) {
   const visited = new Set();
   const route = [];
-
-  // Start from the provided location or the centroid
   let current = startLocation || getCentroid(places);
 
-  // Greedy nearest neighbor algorithm
   while (visited.size < places.length) {
     let nearest = null;
     let minDistance = Infinity;
@@ -39,6 +96,30 @@ export function optimizeTourRoute(places, startLocation = null) {
   }
 
   return route;
+}
+
+/**
+ * 2-opt swap: reverse segment between i and j
+ */
+function twoOptSwap(route, i, j) {
+  const newRoute = route.slice(0, i + 1);
+  const reversed = route.slice(i + 1, j + 1).reverse();
+  const remaining = route.slice(j + 1);
+  return [...newRoute, ...reversed, ...remaining];
+}
+
+/**
+ * Calculate total distance of a route
+ */
+function calculateRouteDistance(route) {
+  let total = 0;
+  for (let i = 0; i < route.length - 1; i++) {
+    total += calculateDistance(
+      { lat: route[i].latitude, lon: route[i].longitude },
+      { lat: route[i + 1].latitude, lon: route[i + 1].longitude }
+    );
+  }
+  return total;
 }
 
 /**

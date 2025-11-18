@@ -35,13 +35,29 @@ const createNumberedIcon = (number) => {
 };
 
 export default function TourMap({ tour }) {
-  const { places, location } = tour;
+  const { places, location, route } = tour;
 
   // Calculate bounds to fit all markers
   const bounds = places.map(place => [place.latitude, place.longitude]);
 
-  // Create route line coordinates
-  const routeCoordinates = places.map(place => [place.latitude, place.longitude]);
+  // Create route coordinates - use actual walking route if available
+  let routeCoordinates = [];
+
+  if (route && route.geometry) {
+    // Use actual walking route from Geoapify
+    if (route.geometry.type === 'MultiLineString') {
+      // MultiLineString: array of line segments (one per leg)
+      routeCoordinates = route.geometry.coordinates.map(lineString =>
+        lineString.map(coord => [coord[1], coord[0]]) // Convert [lon, lat] to [lat, lon] for Leaflet
+      );
+    } else if (route.geometry.type === 'LineString') {
+      // LineString: single continuous line
+      routeCoordinates = [route.geometry.coordinates.map(coord => [coord[1], coord[0]])];
+    }
+  } else {
+    // Fallback: straight lines between places
+    routeCoordinates = [places.map(place => [place.latitude, place.longitude])];
+  }
 
   return (
     <div className="tour-map">
@@ -55,13 +71,16 @@ export default function TourMap({ tour }) {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        {/* Route line */}
-        <Polyline
-          positions={routeCoordinates}
-          color="#3b82f6"
-          weight={4}
-          opacity={0.7}
-        />
+        {/* Route lines (supports multiple segments for MultiLineString) */}
+        {routeCoordinates.map((lineSegment, idx) => (
+          <Polyline
+            key={idx}
+            positions={lineSegment}
+            color="#3b82f6"
+            weight={4}
+            opacity={0.7}
+          />
+        ))}
 
         {/* Place markers */}
         {places.map((place, index) => (
