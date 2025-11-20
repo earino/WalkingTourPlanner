@@ -115,9 +115,9 @@ For each temple pair, Geoapify returns:
 3. Result: Practically navigable AND mathematically optimized!
 
 **Output:**
-- 44 route legs (between 31 temples)
-- 178 turn-by-turn navigation steps
-- 10.92km actual walking distance
+- 30 route legs (between 31 temples)
+- ~175 turn-by-turn navigation steps per tour
+- 11.38-11.66km actual walking distance (varies by gate)
 - Only 5m elevation gain (super flat!)
 
 ## Part 5: The Real-World Constraint Revelation 🚪
