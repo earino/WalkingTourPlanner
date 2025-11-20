@@ -1,0 +1,50 @@
+{
+  "north": {
+    "greedy": {
+      "tsp": 8401.293487758452,
+      "actual": 12746
+    },
+    "optimized": {
+      "tsp": 7414.541712985475,
+      "actual": 11611
+    },
+    "tspImprovement": 11.74523632831987,
+    "actualImprovement": 8.90475443276322
+  },
+  "east": {
+    "greedy": {
+      "tsp": 8110.518442636705,
+      "actual": 12152
+    },
+    "optimized": {
+      "tsp": 7188.048200848532,
+      "actual": 11380
+    },
+    "tspImprovement": 11.373751854613628,
+    "actualImprovement": 6.352863726135616
+  },
+  "south": {
+    "greedy": {
+      "tsp": 7804.129853243519,
+      "actual": 12588
+    },
+    "optimized": {
+      "tsp": 7196.603174702301,
+      "actual": 11664
+    },
+    "tspImprovement": 7.784681828285072,
+    "actualImprovement": 7.340324118207817
+  },
+  "west": {
+    "greedy": {
+      "tsp": 7595.723721265009,
+      "actual": 11221
+    },
+    "optimized": {
+      "tsp": 7510.726427196794,
+      "actual": 11413
+    },
+    "tspImprovement": 1.1190150825293443,
+    "actualImprovement": -1.7110774440780678
+  }
+}
