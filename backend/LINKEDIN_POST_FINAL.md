@@ -1,6 +1,8 @@
 # Building a Temple Pilgrimage with AI: Algorithms Meet Ancient Routes
 
-I just built a comprehensive walking tour of every Buddhist temple in Chiang Mai's Old Town. With AI. In an afternoon. Here's why this was technically interesting and what it reveals about human-AI collaboration.
+I’m spending the rest of the year in Thailand, building things and enjoying my time with Leigh. I’m currently enjoying Chiang Mai and enjoying a great co-working space, Yellow in the Nimman. Highly recommend to both. Leigh and I decided to stay out here because it was an easier “living here simulator” than the historic Old Town. However, visiting the Old Town is really rewarding. It’s an amazing space packed with temples. Enough of them, that I couldn’t help but ask myself: “What are the optimal strategies for visiting all of the identifiable temples in Chiang Mai.” Obviously what anyone would do.
+
+So, using Claude Code, Chat-GPT and a bunch of stuff I’ll cover later in this post, I built a comprehensive walking tour of every Buddhist temple in Chiang Mai's Old Town. With AI. In an afternoon. Here's why this was technically interesting to me and what I experienced in this human-AI collaboration.
 
 ## Part 1: What Even IS "Inside the Moat"? 🗺️
 
@@ -25,13 +27,13 @@ This back-and-forth established ground truth: a precise 1.55km × 1.60km rectang
 
 ## Part 2: When Geocoding Goes Wrong 🎯
 
-**The Setup:** I gave Claude a list of 76 temple names.
+**The Setup:** I gave Claude a list of 76 temple names I got from ChatGPT.
 
 **AI's approach:** "I'll geocode all 76 temples using Geoapify API!"
 
 **Result:** 
 - API calls: 76/76 successful ✅
-- Actual accuracy: 26/76 geocoded to EXACTLY the same coordinates 😬
+- Actual accuracy: 26/76 geocoded to EXACTLY the same coordinates 😬 The temples are densely packed in Chiang Mai, but not like that.
 - Location: Generic "Chiang Mai City Municipality" (18.7882778, 98.9858802)
 
 **First fix attempt:** "Try Thai script names! (วัดบุปผาราม instead of 'Wat Buppharam')"
@@ -47,11 +49,10 @@ This back-and-forth established ground truth: a precise 1.55km × 1.60km rectang
 
 **Discoveries:**
 - Spelling variations: "Wat Sadeu Muang Inthakin" → Google knows it as "Wat Inthakhin Sadue Muang" (words completely reordered!)
-- Duplicates: "Wat Sai Moon Myanmar" and "Wat Sai Moon Muang" = SAME temple at exact coordinates
 - Non-temples: "Wat Yuparaj Wittayalai" = high school, not a temple!
 - Outside moat: Many temples from the original list were legitimately outside the boundaries
 
-**Final count:** 31 verified temples (from 76 original) - all manually validated.
+**Final count:** 31 verified temples (from 76 original) - all manually validated. Where manually validated means I copy/pasted the name into google, queried, minimally investigated that it was a temple in Chiang Mai, and told Claude we could continue.
 
 ## Part 3: The Traveling Salesman Problem 🧮
 
