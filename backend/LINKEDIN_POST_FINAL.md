@@ -119,29 +119,108 @@ For each temple pair, Geoapify returns:
 - 10.92km actual walking distance
 - Only 5m elevation gain (super flat!)
 
-## Part 5: The Real-World Constraint 🚪
+## Part 5: The Real-World Constraint Revelation 🚪
 
-**Problem discovered:** Our "optimal" route starts at Wat Pha Khao... in the middle of the old town.
+**The "Optimal" Illusion:**
 
-**Reality:** Visitors enter through one of 4 moat gates (North, East, South, West).
+Our TSP algorithm found the mathematically perfect route: 6.83km starting at Wat Pha Khao.
 
-**Solution:** Generate 4 different tours, each optimized FROM a specific gate.
+**Problem:** Wat Pha Khao is in the middle of the old town. How do visitors GET there?
 
-**Implementation:**
-1. Find temple nearest to each gate corner
-2. Force TSP to start from that temple
-3. Optimize the remaining 30 temples
-4. Calculate separate routing for each variant
+**The realization:** Real visitors don't teleport to the optimal starting point. They enter through one of 4 moat gates:
+- **North:** Chang Phuak Gate (18.795407°, 98.986578°)
+- **East:** Tha Phae Gate (18.788749°, 98.993208°)
+- **South:** Chiang Mai Gate (18.781205°, 98.986598°)
+- **West:** Suan Dok Gate (18.788781°, 98.978186°)
 
-**Results:**
-- **North Gate:** 6.48km TSP → 12.84km actual
-- **East Gate:** 6.82km TSP → 11.87km actual
-- **South Gate:** 6.43km TSP → 13.21km actual ⭐ Shortest TSP!
-- **West Gate:** 6.76km TSP → 12.09km actual
+**This meant:** We needed 4 different optimal tours, each starting from a realistic entry point.
 
-Each gate gets its own optimal route - practical AND mathematically sound.
+**First mistake:** We used moat CORNER coordinates (NW, NE, SE, SW) instead of the actual GATE locations (center of each side). Result: starting temples were 200-400m away from actual gates!
 
-## Part 6: AI Building AI Tools 🤖²
+**Lesson learned:** Verify assumptions about "ground truth" even when you have precise coordinates.
+
+## Part 6: Greedy vs 2-Opt - A Quantitative Exploration 📊
+
+**The Question:** For routes with forced start points, is 2-opt optimization worth the added complexity?
+
+**The Setup:**
+
+We implemented two algorithms:
+
+**Algorithm 1: Greedy Nearest-Neighbor**
+```javascript
+function greedyFromStart(temples, startTemple) {
+  route = [startTemple];
+  current = startTemple;
+
+  while (unvisited.length > 0) {
+    nearest = findClosest(current, unvisited);
+    route.push(nearest);
+    current = nearest;
+  }
+  return route;
+}
+```
+- Complexity: O(n²)
+- Fast and simple
+- But potentially suboptimal
+
+**Algorithm 2: Greedy + 2-Opt with Fixed Start**
+```javascript
+function optimizeWithFixedStart(temples, startTemple) {
+  route = greedyFromStart(temples, startTemple);
+
+  // Improve with 2-opt, keeping position 0 fixed
+  while (improved) {
+    for (i = 1; i < n-1; i++) {      // Start at 1, not 0!
+      for (j = i+2; j < n; j++) {
+        if (reversing segment [i...j] reduces distance):
+          reverse it;
+          improved = true;
+      }
+    }
+  }
+  return route;
+}
+```
+- Complexity: O(n² × iterations)
+- ~100 iterations typical
+- Potentially better routes
+
+**The Experiment:**
+
+For each of the 4 gates, we measured:
+- Greedy distance
+- Greedy+2opt distance
+- Improvement percentage
+
+**The Results:**
+
+```
+GATE           GREEDY    GREEDY+2OPT   IMPROVEMENT
+─────────────────────────────────────────────────
+North Gate     7.90 km   6.98 km       11.75% ⭐
+East Gate      7.77 km   6.88 km       11.37% ⭐
+South Gate     7.80 km   7.20 km       7.78%
+West Gate      7.60 km   7.51 km       1.12%
+
+AVERAGE IMPROVEMENT: 8.01%
+```
+
+**The Verdict:** 2-opt is absolutely worth it!
+
+**Why the variation?**
+- North & East gates: 11%+ improvement (greedy made poor early choices)
+- South gate: ~8% improvement (greedy was decent)
+- West gate: ~1% improvement (greedy was already quite good, or local optimum)
+
+**Unexpected finding:** The West gate's greedy route happened to be near-optimal already, while North and East gates benefited dramatically from 2-opt refinement.
+
+**Computational cost:** ~100 iterations × O(n²) per gate = negligible on modern hardware for n=31.
+
+**Conclusion:** For forced-start TSP, greedy initialization + 2-opt refinement provides meaningful optimization (8% average) with minimal computational overhead. The improvement varies by starting point, suggesting some entry points have "easier" optimization landscapes than others.
+
+## Part 7: AI Building AI Tools 🤖²
 
 Meta moment: I used Claude (Anthropic) to build a tour generator that queries Gemini (Google) for descriptions.
 
@@ -180,7 +259,7 @@ generateDescription(temple, {
 
 **Result:** "Founded 1391 by King Saen Muang Ma for his father's ashes, completed 1475 at 85m tall, housed the Emerald Buddha 1468-1551, upper 30m collapsed in 1545 earthquake, reconstructed 1990s with UNESCO support."
 
-## Part 7: The Human-AI Dance 💃🤖
+## Part 8: The Human-AI Dance 💃🤖
 
 **What AI crushed:**
 - Geocoding 76 temples in minutes
@@ -203,13 +282,14 @@ AI can't validate its own output against ground truth. Humans can't optimize 31!
 ## The Result
 
 Live interactive temple pilgrimage tours:
-🌐 https://earino.github.io/WalkingTourPlanner/temple-tours-BY-GATE.html
+🌐 https://earino.github.io/WalkingTourPlanner/chiang-mai-temple-tour.html
 
 **Features:**
 - Choose your starting gate (North/East/South/West)
 - 31 verified temples with factual historical descriptions
-- TSP-optimized routes (6.43-6.82km as-the-crow-flies)
-- 178 turn-by-turn walking directions per route
+- Greedy+2opt optimized routes (8% better than pure greedy)
+- 11.38-11.66km per tour (depending on gate)
+- 170+ turn-by-turn walking directions per route
 - Click "Navigate Here" → opens Google Maps from your location
 - 4 different tour variants, each optimized for its entry point
 
@@ -229,7 +309,7 @@ Live interactive temple pilgrimage tours:
 4. **Iteration is everything** - We tried 4 different geocoding strategies
 5. **The result exceeds what either could build alone**
 
-Built collaboratively in an afternoon. Try it: https://earino.github.io/WalkingTourPlanner/temple-tours-BY-GATE.html
+Built collaboratively in an afternoon. Try it: https://earino.github.io/WalkingTourPlanner/chiang-mai-temple-tour.html
 
 Code: https://github.com/earino/WalkingTourPlanner
 
