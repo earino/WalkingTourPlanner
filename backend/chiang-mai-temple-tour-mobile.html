@@ -238,9 +238,9 @@ function updateMapCenter(idx, shouldScroll = true) {
     duration: 0.5
   });
 
-  // Pan UP to center in visible area
+  // Pan DOWN to move temple UP into visible area
   setTimeout(() => {
-    map.panBy([0, -offsetPixels], {animate: false});
+    map.panBy([0, offsetPixels], {animate: false});
   }, 100);
 
   // Optionally scroll list to card

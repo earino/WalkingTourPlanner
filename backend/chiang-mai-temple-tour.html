@@ -180,6 +180,9 @@ function loadTour(gate) {
     
     const marker = L.marker([t.latitude, t.longitude], {icon}).addTo(markerLayer);
 
+    // Store marker reference for later
+    marker.templeIndex = i;
+
     // Make marker tappable
     marker.on('click', () => {
       viewOnMap(i);
@@ -188,6 +191,7 @@ function loadTour(gate) {
     const card = document.createElement('div');
     card.className = 'temple-card' + (start ? ' start' : end ? ' end' : '');
     card.id = 'temple-' + i;
+    card.dataset.index = i;
     card.innerHTML = 
       '<div class="temple-header"><div class="temple-num">' + (i+1) + '</div><div class="temple-name">' + t.name + '</div></div>' +
       '<div class="temple-desc">' + (t.factualDescription || t.name) + '</div>' +
@@ -198,46 +202,82 @@ function loadTour(gate) {
     
     list.appendChild(card);
   });
+
+  // Set up IntersectionObserver for scroll-to-map sync
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+        const idx = parseInt(entry.target.dataset.index);
+        updateMapCenter(idx, false); // false = don't scroll list
+      }
+    });
+  }, {
+    root: document.querySelector('.sheet-content'),
+    threshold: [0, 0.5, 1]
+  });
+
+  // Observe all temple cards
+  document.querySelectorAll('.temple-card').forEach(card => {
+    observer.observe(card);
+  });
+}
+
+function updateMapCenter(idx, shouldScroll = true) {
+  const tour = TOURS[currentGate];
+  const temple = tour.temples[idx];
+
+  // Calculate offset for bottom sheet
+  // We want to center in the VISIBLE map area (above the sheet)
+  const currentSheetHeight = parseInt(sheet.style.height) || COLLAPSED;
+
+  // Offset = half the sheet height (centers point in visible area)
+  const offsetPixels = currentSheetHeight / 2;
+
+  map.setView([temple.latitude, temple.longitude], 16, {
+    animate: true,
+    duration: 0.5
+  });
+
+  // Pan DOWN to move temple UP into visible area
+  setTimeout(() => {
+    map.panBy([0, offsetPixels], {animate: false});
+  }, 100);
+
+  // Optionally scroll list to card
+  if (shouldScroll) {
+    const card = document.getElementById('temple-' + idx);
+    if (card) {
+      setTimeout(() => {
+        card.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }, 100);
+    }
+  }
 }
 
 function viewOnMap(idx) {
-  const tour = TOURS[currentGate];
-  map.setView([tour.temples[idx].latitude, tour.temples[idx].longitude], 17, {animate: true});
-
   // Expand sheet FIRST
   if (window.innerWidth < 768) {
     sheetHeight = EXPANDED;
     sheet.style.height = EXPANDED + 'px';
   }
 
-  // Wait for sheet expansion, then scroll
+  // Update map and scroll to card
   setTimeout(() => {
+    updateMapCenter(idx, true);
+
+    // Highlight the card
     const card = document.getElementById('temple-' + idx);
-    const container = document.querySelector('.sheet-content');
-
-    console.log('Scrolling to temple', idx, card ? 'found' : 'NOT FOUND');
-
-    if (card && container) {
+    if (card) {
       // Clear previous highlights
       document.querySelectorAll('.temple-card').forEach(c => {
         c.style.background = '';
       });
 
-      // Scroll using scrollIntoView on the card itself
-      card.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest'
-      });
-
-      // Highlight
       card.style.background = '#fff3cd';
       setTimeout(() => {
         const isStartOrEnd = idx === 0 || idx === tour.temples.length - 1;
         card.style.background = isStartOrEnd ? '#f8f9fa' : '';
       }, 1200);
-    } else {
-      console.error('Could not find card or container', idx);
     }
   }, 400);
 }
