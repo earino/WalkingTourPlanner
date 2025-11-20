@@ -226,22 +226,15 @@ function updateMapCenter(idx, shouldScroll = true) {
   const tour = TOURS[currentGate];
   const temple = tour.temples[idx];
 
-  // Calculate offset for bottom sheet
-  // We want to center in the VISIBLE map area (above the sheet)
+  // Get current sheet height
   const currentSheetHeight = parseInt(sheet.style.height) || COLLAPSED;
 
-  // Offset = half the sheet height (centers point in visible area)
-  const offsetPixels = currentSheetHeight / 2;
-
-  map.setView([temple.latitude, temple.longitude], 16, {
+  // Use flyTo with padding to account for bottom sheet
+  map.flyTo([temple.latitude, temple.longitude], 16, {
     animate: true,
-    duration: 0.5
+    duration: 0.5,
+    paddingBottomRight: [0, currentSheetHeight]
   });
-
-  // Pan DOWN to move temple UP into visible area
-  setTimeout(() => {
-    map.panBy([0, offsetPixels], {animate: false});
-  }, 100);
 
   // Optionally scroll list to card
   if (shouldScroll) {
