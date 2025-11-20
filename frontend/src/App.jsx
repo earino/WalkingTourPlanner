@@ -61,7 +61,7 @@ function App() {
         <p>Discover amazing places with AI-powered walking tours</p>
       </header>
 
-      <SearchForm onSearch={handleSearch} isLoading={loading} />
+      {!tour && <SearchForm onSearch={handleSearch} isLoading={loading} />}
 
       {error && (
         <div className="error">

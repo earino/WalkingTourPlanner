@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiang Mai Old Town Moat Boundaries Verification</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    .legend {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 1000;
+      max-width: 300px;
+    }
+    .legend h3 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+    }
+    .legend-item {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    .corner-marker {
+      font-weight: bold;
+      color: #e74c3c;
+    }
+    .gate-marker {
+      font-weight: bold;
+      color: #3498db;
+    }
+    .temple-marker {
+      color: #2ecc71;
+    }
+    .dims {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="legend">
+    <h3>🏯 Moat Boundary Verification</h3>
+    <div class="legend-item corner-marker">🔴 Corner Pins (Bounding Box)</div>
+    <div class="legend-item gate-marker">🔵 Actual Gates</div>
+    <div class="legend-item temple-marker">🟢 Reference Temples</div>
+    <div class="dims">
+      <strong>Bounding Box:</strong><br>
+      North: 18.801<br>
+      South: 18.780<br>
+      East: 98.995<br>
+      West: 98.977<br>
+      <br>
+      <strong>Dimensions:</strong> ~1.9km × 2.3km
+    </div>
+  </div>
+  <div id="map"></div>
+
+  <script>
+    // Initialize map centered on old town
+    const map = L.map('map').setView([18.7905, 98.986], 14);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors',
+      maxZoom: 19
+    }).addTo(map);
+
+    // Bounding box corners (what we want to verify)
+    const bbox = {
+      west: 98.977,
+      south: 18.780,
+      east: 98.995,
+      north: 18.801
+    };
+
+    // Corner pins (RED - these define the bounding box)
+    const corners = [
+      { name: 'Northwest Corner', lat: bbox.north, lon: bbox.west },
+      { name: 'Northeast Corner', lat: bbox.north, lon: bbox.east },
+      { name: 'Southeast Corner', lat: bbox.south, lon: bbox.east },
+      { name: 'Southwest Corner', lat: bbox.south, lon: bbox.west }
+    ];
+
+    corners.forEach(corner => {
+      L.circleMarker([corner.lat, corner.lon], {
+        radius: 12,
+        fillColor: '#e74c3c',
+        color: '#c0392b',
+        weight: 3,
+        opacity: 1,
+        fillOpacity: 0.8
+      }).addTo(map).bindPopup(`<strong>${corner.name}</strong><br>${corner.lat}, ${corner.lon}`);
+    });
+
+    // Draw bounding box rectangle
+    L.rectangle([
+      [bbox.south, bbox.west],
+      [bbox.north, bbox.east]
+    ], {
+      color: '#e74c3c',
+      weight: 3,
+      fillOpacity: 0.1
+    }).addTo(map);
+
+    // Actual gate locations (BLUE - verified from geocoding)
+    const gates = [
+      { name: 'Chang Phuak Gate (North)', lat: 18.7991224, lon: 98.98692849234843 },
+      { name: 'Tha Phae Gate (East)', lat: 18.7874469, lon: 98.99344468425235 },
+      { name: 'Chiang Mai Gate (South)', lat: 18.7813553, lon: 98.9889812 },
+      { name: 'Suan Dok Gate (West)', lat: 18.7888357, lon: 98.9781922 }
+    ];
+
+    gates.forEach(gate => {
+      L.circleMarker([gate.lat, gate.lon], {
+        radius: 8,
+        fillColor: '#3498db',
+        color: '#2980b9',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.9
+      }).addTo(map).bindPopup(`<strong>${gate.name}</strong><br>${gate.lat.toFixed(6)}, ${gate.lon.toFixed(6)}`);
+    });
+
+    // Reference temples (GREEN - to verify inside/outside)
+    const temples = [
+      { name: 'Wat Chedi Luang (CENTER - inside)', lat: 18.7871427, lon: 98.9867839803562, inside: true },
+      { name: 'Wat Phra Singh (inside)', lat: 18.7882068, lon: 98.98137728020629, inside: true },
+      { name: 'Wat Suan Dok (OUTSIDE - west)', lat: 18.78815585, lon: 98.96778304773827, inside: false }
+    ];
+
+    temples.forEach(temple => {
+      L.circleMarker([temple.lat, temple.lon], {
+        radius: 6,
+        fillColor: temple.inside ? '#2ecc71' : '#f39c12',
+        color: temple.inside ? '#27ae60' : '#e67e22',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.8
+      }).addTo(map).bindPopup(`<strong>${temple.name}</strong><br>${temple.lat.toFixed(6)}, ${temple.lon.toFixed(6)}<br><em>${temple.inside ? 'Should be inside' : 'Should be outside'}</em>`);
+    });
+
+    // Add moat overlay (from OpenStreetMap data, approximate)
+    // The actual moat follows these streets roughly
+    const moatApprox = [
+      [bbox.north - 0.001, bbox.west + 0.001],
+      [bbox.north - 0.001, bbox.east - 0.001],
+      [bbox.south + 0.001, bbox.east - 0.001],
+      [bbox.south + 0.001, bbox.west + 0.001],
+      [bbox.north - 0.001, bbox.west + 0.001]
+    ];
+
+    L.polyline(moatApprox, {
+      color: '#9b59b6',
+      weight: 2,
+      dashArray: '5, 10',
+      opacity: 0.6
+    }).addTo(map).bindPopup('Approximate moat line');
+  </script>
+</body>
+</html>

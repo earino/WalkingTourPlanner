@@ -24,8 +24,18 @@ export async function searchPlaces(query, limit = 100) {  // Increased from 20 t
     // Use AI-generated Geoapify category if available, otherwise use fallback mapping
     let categories;
     if (query.geoapifyCategory) {
-      // Use the category from AI parsing (e.g., "catering.restaurant.tapas,catering.bar")
-      categories = query.geoapifyCategory;
+      // Validate and fix common category mistakes
+      categories = query.geoapifyCategory
+        .split(',')
+        .map(cat => {
+          cat = cat.trim();
+          // Fix common AI mistakes with invalid category paths
+          if (cat === 'catering.restaurant.fast_food') return 'catering.fast_food';
+          if (cat === 'catering.restaurant.hot_dog') return 'catering.fast_food.hot_dog';
+          if (cat === 'catering.restaurant.street_food') return 'catering.fast_food';
+          return cat;
+        })
+        .join(',');
       console.log('Using AI-generated category:', categories);
     } else {
       // Fallback category mapping for when AI parsing fails
@@ -64,6 +74,10 @@ export async function searchPlaces(query, limit = 100) {  // Increased from 20 t
     }));
   } catch (error) {
     console.error('Error searching places:', error.message);
+    if (error.response) {
+      console.error('Status:', error.response.status);
+      console.error('Response data:', JSON.stringify(error.response.data, null, 2));
+    }
     throw new Error('Failed to search places');
   }
 }
@@ -97,6 +111,15 @@ export async function geocodeLocation(locationString) {
     throw new Error('Location not found');
   } catch (error) {
     console.error('Error geocoding location:', error.message);
+    if (error.response) {
+      console.error('Status:', error.response.status);
+      console.error('Response data:', error.response.data);
+
+      // Handle rate limiting
+      if (error.response.status === 500 || error.response.status === 429) {
+        throw new Error('Geoapify API rate limit reached. Please try again in a few minutes.');
+      }
+    }
     throw new Error('Failed to geocode location');
   }
 }
@@ -138,11 +161,34 @@ export async function calculateOptimizedRoute(waypoints) {
         });
       }
 
+      // Process legs to extract turn-by-turn directions
+      const processedLegs = route.properties.legs.map((leg, legIndex) => {
+        const directions = leg.steps.map((step, stepIndex) => ({
+          instruction: step.instruction?.text || 'Continue',
+          distance: Math.round(step.distance), // meters
+          duration: Math.round(step.time || 0), // seconds - API uses "time" not "duration"
+          type: step.instruction?.type || 'unknown',
+          streetName: step.instruction?.street_name || null,
+          geometry: step.geometry,
+          elevation: step.elevation // elevation at this step
+        }));
+
+        return {
+          fromStopIndex: legIndex,
+          toStopIndex: legIndex + 1,
+          distance: Math.round(leg.distance), // meters
+          duration: Math.round(leg.time || 0), // seconds - API uses "time" not "duration"
+          directions: directions,
+          geometry: leg.geometry
+        };
+      });
+
       return {
         distance: route.properties.distance, // in meters
         time: route.properties.time, // in seconds
         geometry: route.geometry,
-        legs: route.properties.legs,
+        legs: processedLegs,
+        rawLegs: route.properties.legs, // Keep original for reference
         elevation: {
           gain: Math.round(totalElevationGain),
           max: Math.round(maxElevation),

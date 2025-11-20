@@ -156,6 +156,12 @@ export async function rankPlacesByRelevance(originalQuery, places, topN = 10, mo
     // Extract selections array
     const selections = result.selections || [];
 
+    if (selections.length === 0) {
+      console.error('AI returned 0 selections - invalid response');
+      console.error('Raw response:', text);
+      throw new Error('AI ranking returned no selections. The model may have misunderstood the query.');
+    }
+
     if (selections.length !== topN) {
       console.warn(`Expected ${topN} selections, got ${selections.length}`);
     }

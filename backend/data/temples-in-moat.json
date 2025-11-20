@@ -37,42 +37,54 @@
     {
       "name": "Wat Buppharam",
       "query": "Wat Buppharam, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.9227933,
+      "longitude": 98.93744904262701,
+      "formatted": "Wat Buppha Ram, Liap Khlong Chonlaprathan Road, Mae Rim, 50180, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:15.082Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดบุปผาราม"
     },
     {
       "name": "Wat Chai Mongkhon",
       "query": "Wat Chai Mongkhon, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.78066605,
+      "longitude": 99.0046191114331,
+      "formatted": "Wat Chaimongkol, Charoenprated Road, Chiang Mai City Municipality, 50100, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:16.422Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดชัยมงคล"
     },
     {
       "name": "Wat Chai Prakiat",
       "query": "Wat Chai Prakiat, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 14.357065250000002,
+      "longitude": 100.55241072658632,
+      "formatted": "Medicinal Plants Garden for Honourable of King Bhumibol the Great, Soi U Thong 30, Mu 2, 13000, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:17.717Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดชัยประเกียรติ"
     },
     {
       "name": "Wat Chai Sri Phum",
       "query": "Wat Chai Sri Phum, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.7941924,
+      "longitude": 98.99414790787223,
+      "formatted": "Wat Chai Sri Phoon, Chayiaphoom Road, Chiang Mai City Municipality, Ban Wiphawadi, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:19.174Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดชัยศรีภูมิ"
     },
     {
       "name": "Wat Chang Taem",
@@ -97,12 +109,15 @@
     {
       "name": "Wat Chetawan",
       "query": "Wat Chetawan, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.788656699999997,
+      "longitude": 98.99569141219146,
+      "formatted": "Wat Cheatawan, Chang Moi Road Soi 2, Chiang Mai City Municipality, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:22.917Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดเชตวัน"
     },
     {
       "name": "Wat Chiang Man",
@@ -117,52 +132,68 @@
     {
       "name": "Wat Chiang Yeun",
       "query": "Wat Chiang Yeun, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.7963246,
+      "longitude": 98.9887797,
+      "formatted": "Wat Chiang Yuen, Sanamkila Road Soi 2, Chiang Mai City Municipality, Ban Wiphawadi, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:26.513Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดเชียงยืน"
     },
     {
       "name": "Wat Dap Phai",
       "query": "Wat Dap Phai, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.793841,
+      "longitude": 98.981537,
+      "formatted": "29 Singharat Rd, Chiang Mai",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:43.957Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 2",
+      "originalQuery": "วัดดาบไฮ เชียงใหม่",
+      "manuallyVerified": true
     },
     {
       "name": "Wat Dok Euang",
       "query": "Wat Dok Euang, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.790270200000002,
+      "longitude": 98.99248362668214,
+      "formatted": "Wat Dokeung, Moon Muang Road Soi 5, Chiang Mai City Municipality, Muang Chiang Mai, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:45.538Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดดอกเอื้อง"
     },
     {
       "name": "Wat Dok Kham",
       "query": "Wat Dok Kham, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.78925315,
+      "longitude": 98.99298681170362,
+      "formatted": "Wat Dokkham, Moonmuang Road Soi 4, Chiang Mai City Municipality, Muang Chiang Mai, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:46.937Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดดอกคำ"
     },
     {
       "name": "Wat Duang Dee",
       "query": "Wat Duang Dee, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.7894799,
+      "longitude": 98.98849686223059,
+      "formatted": "Wat Duang Di, Prapokklao Road Soi 12, Chiang Mai City Municipality, Muang Chiang Mai, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:48.168Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดดวงดี"
     },
     {
       "name": "Wat Fon Soi",
@@ -177,12 +208,16 @@
     {
       "name": "Wat Khuan Khama",
       "query": "Wat Khuan Khama, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.795188,
+      "longitude": 98.988449,
+      "formatted": "143 Sri Poom Rd, Chiang Mai",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:50.675Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดควนคำ",
+      "manuallyVerified": true
     },
     {
       "name": "Wat Lam Chang",
@@ -197,22 +232,29 @@
     {
       "name": "Wat Loi Khro",
       "query": "Wat Loi Khro, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.7846428,
+      "longitude": 98.99684788838161,
+      "formatted": "Wat Loi Kroh, Kamphangdin Road Lane 2, Chiang Mai City Municipality, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:53.344Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดลอยเคราะห์"
     },
     {
       "name": "Wat Mai Tang",
       "query": "Wat Mai Tang, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.795103,
+      "longitude": 98.978598,
+      "formatted": "Wat Mai Tang, Arak Road, Chiang Mai City Municipality, 50200, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:57.312Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 2",
+      "originalQuery": "วัดใหม่ตั้ง เชียงใหม่",
+      "manuallyVerified": true
     },
     {
       "name": "Wat Mo Kham Tuang",
@@ -227,12 +269,15 @@
     {
       "name": "Wat Muang Mang",
       "query": "Wat Muang Mang, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.79533545,
+      "longitude": 98.99630719999999,
+      "formatted": "TCDC Chiang Mai, Muang Samut Road, Chiang Mai City Municipality, Ban Wiphawadi, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:10:59.659Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 2",
+      "originalQuery": "วัดม่วงมั่ง เชียงใหม่"
     },
     {
       "name": "Wat Muen Larn",
@@ -257,32 +302,43 @@
     {
       "name": "Wat Muen Toom",
       "query": "Wat Muen Toom, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.794101,
+      "longitude": 98.987412,
+      "formatted": "252/13-14, Prapokklao road, Chiang Mai, CM 50200, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:02.999Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 2",
+      "originalQuery": "วัดหมื่นถ่ม เชียงใหม่",
+      "manuallyVerified": true
     },
     {
       "name": "Wat Pa Paeng",
       "query": "Wat Pa Paeng, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.79533545,
+      "longitude": 98.99630719999999,
+      "formatted": "TCDC Chiang Mai, Muang Samut Road, Chiang Mai City Municipality, Ban Wiphawadi, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:06.780Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 2",
+      "originalQuery": "วัดป่าแป้ง เชียงใหม่"
     },
     {
       "name": "Wat Pan Ping",
       "query": "Wat Pan Ping, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.788868,
+      "longitude": 98.990604,
+      "formatted": "160, Ratchapakhinai Road, Chiang Mai, CM 50200, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:08.632Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดปันปิง",
+      "manuallyVerified": true
     },
     {
       "name": "Wat Pha Khao",
@@ -307,12 +363,15 @@
     {
       "name": "Wat Phan Waen",
       "query": "Wat Phan Waen, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.783010349999998,
+      "longitude": 98.9857690035494,
+      "formatted": "Wat Pan Whaen, Ratchamanka Road Soi 6, Chiang Mai City Municipality, Muang Chiang Mai, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:14.972Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดพันแหวน"
     },
     {
       "name": "Wat Phra Chao Meng Rai",
@@ -345,44 +404,59 @@
       "withinMoat": true
     },
     {
-      "name": "Wat Puak Hom",
+      "name": "Wat Phuak Hong",
       "query": "Wat Puak Hom, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.783025,
+      "longitude": 98.98112,
+      "formatted": "Wat Phuak Hong, Samlan Road, Chiang Mai City Municipality, Muang Chiang Mai, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:18.643Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 2",
+      "originalQuery": "วัดหมากหอม เชียงใหม่",
+      "manuallyVerified": true
     },
     {
       "name": "Wat Puak Taem",
       "query": "Wat Puak Taem, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.782998,
+      "longitude": 98.98325,
+      "formatted": "Wat Puak Taem, 15 Samlan Road Soi 7, Chiang Mai City Municipality, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:20.739Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 2",
+      "originalQuery": "วัดหมากแต้ม เชียงใหม่",
+      "manuallyVerified": true
     },
     {
-      "name": "Wat Sadeu Muang Inthakin",
+      "name": "Wat Inthakhin Sadue Muang",
       "query": "Wat Sadeu Muang Inthakin, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.789528,
+      "longitude": 98.987024,
+      "formatted": "Wat Inthakhin Sadue Muang, Prapokklao Road Soi 11, Chiang Mai City Municipality, Muang Chiang Mai, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:23.345Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 2",
+      "originalQuery": "วัดสะเดาเมืองอินทขิล เชียงใหม่",
+      "manuallyVerified": true
     },
     {
       "name": "Wat Saen Muang Ma",
       "query": "Wat Saen Muang Ma, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.794115499999997,
+      "longitude": 98.9863433439566,
+      "formatted": "Wat Saen Mueang Ma Luang, Sripoom Road Soi 5, Chiang Mai City Municipality, Muang Chiang Mai, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:24.529Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดแสนเมืองมา"
     },
     {
       "name": "Wat Sai Moon Muang",
@@ -392,16 +466,6 @@
       "formatted": "Wat Sai Moon Myanmar, Moonmuang Road Soi 2, Chiang Mai City Municipality, Muang Chiang Mai, 55520, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:26.621Z",
-      "withinMoat": true
-    },
-    {
-      "name": "Wat Sai Moon Myanmar",
-      "query": "Wat Sai Moon Myanmar, Chiang Mai, Thailand",
-      "latitude": 18.781959399999998,
-      "longitude": 98.99120555983336,
-      "formatted": "Wat Sai Moon Myanmar, Moonmuang Road Soi 2, Chiang Mai City Municipality, Muang Chiang Mai, 55520, Thailand",
-      "success": true,
-      "geocodedAt": "2025-11-20T10:11:27.266Z",
       "withinMoat": true
     },
     {
@@ -427,22 +491,28 @@
     {
       "name": "Wat Sri Don Chai",
       "query": "Wat Sri Don Chai, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.65922525,
+      "longitude": 99.1582893958066,
+      "formatted": "Wat Si Don Chai, ลพ.4032, Ban Pa Pi, 51180, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:30.467Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดศรีดอนชัย"
     },
     {
       "name": "Wat Sri Khong",
       "query": "Wat Sri Khong, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.64374755,
+      "longitude": 98.95296360621353,
+      "formatted": "Wat Si Pho Ngam, ชม.4032, Ban Tha Ma Ko, 50340, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:31.745Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดศรีคง"
     },
     {
       "name": "Wat Tung Yu",
@@ -467,22 +537,15 @@
     {
       "name": "Wat Yang Guang",
       "query": "Wat Yang Guang, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
+      "latitude": 18.77578005,
+      "longitude": 98.98907687085156,
+      "formatted": "Wat Yang Kuang, Suriyawongse road, Chiang Mai City Municipality, Prime Horizon, 50100, Thailand",
       "success": true,
       "geocodedAt": "2025-11-20T10:11:37.880Z",
-      "withinMoat": true
-    },
-    {
-      "name": "Wat Yuparaj Wittayalai",
-      "query": "Wat Yuparaj Wittayalai, Chiang Mai, Thailand",
-      "latitude": 18.7882778,
-      "longitude": 98.9858802,
-      "formatted": "Chiang Mai City Municipality, Thailand",
-      "success": true,
-      "geocodedAt": "2025-11-20T10:11:38.564Z",
-      "withinMoat": true
+      "withinMoat": true,
+      "geocodingImproved": true,
+      "improvementMethod": "Geoapify strategy 1",
+      "originalQuery": "วัดยางกวง"
     }
   ],
   "templesOutsideMoat": [

@@ -67,3 +67,44 @@ export async function getPlaceDetails(name, lat, lon) {
     throw new Error(error.response?.data?.error || 'Failed to get place details');
   }
 }
+
+/**
+ * Export tour as PDF
+ */
+export async function exportTourAsPdf(tour) {
+  try {
+    const response = await axios.post(`${API_BASE_URL}/api/tours/export-pdf`,
+      { tour },
+      {
+        responseType: 'blob' // Important for binary PDF data
+      }
+    );
+
+    // Create download link
+    const blob = new Blob([response.data], { type: 'application/pdf' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+
+    // Extract filename from Content-Disposition header if available
+    const contentDisposition = response.headers['content-disposition'];
+    let filename = 'walking-tour.pdf';
+    if (contentDisposition) {
+      const filenameMatch = contentDisposition.match(/filename="(.+)"/);
+      if (filenameMatch) {
+        filename = filenameMatch[1];
+      }
+    }
+
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+
+    return { success: true };
+  } catch (error) {
+    console.error('Error exporting PDF:', error);
+    throw new Error(error.response?.data?.error || 'Failed to export PDF');
+  }
+}

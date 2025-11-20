@@ -15,8 +15,10 @@ export default function ElevationProfile({ route, places }) {
   let cumulativeDistance = 0;
 
   route.legs.forEach((leg, legIndex) => {
-    if (leg.steps) {
-      leg.steps.forEach((step) => {
+    // Check for directions (new format) or steps (old format)
+    const steps = leg.directions || leg.steps;
+    if (steps) {
+      steps.forEach((step) => {
         if (step.elevation !== undefined) {
           elevationPoints.push({
             distance: cumulativeDistance,

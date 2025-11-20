@@ -1,5 +1,6 @@
 import express from 'express';
 import { createWalkingTour, getPlaceDetails } from '../services/tourService.js';
+import { generateTourPdf, generatePdfFilename } from '../services/pdfService.js';
 
 const router = express.Router();
 
@@ -103,6 +104,42 @@ router.get('/create-stream', async (req, res) => {
     console.error('Error creating tour with SSE:', error);
     res.write(`data: ${JSON.stringify({ stage: 'error', error: error.message })}\n\n`);
     res.end();
+  }
+});
+
+/**
+ * POST /api/tours/export-pdf
+ * Generate and download a PDF tour guide
+ */
+router.post('/export-pdf', async (req, res) => {
+  try {
+    const { tour } = req.body;
+
+    if (!tour) {
+      return res.status(400).json({ error: 'Tour data is required' });
+    }
+
+    console.log('Generating PDF for tour:', tour.title);
+
+    // Generate PDF
+    const pdfBuffer = await generateTourPdf(tour);
+
+    // Generate filename
+    const filename = generatePdfFilename(tour);
+
+    // Send PDF as download
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+    res.setHeader('Content-Length', pdfBuffer.length);
+
+    // Send as Buffer to ensure binary transfer
+    res.end(pdfBuffer, 'binary');
+  } catch (error) {
+    console.error('Error exporting PDF:', error);
+    res.status(500).json({
+      error: 'Failed to generate PDF',
+      details: error.message
+    });
   }
 });
 

@@ -3,11 +3,14 @@ import { useSearchParams } from 'react-router-dom';
 import TourMap from './TourMap';
 import ElevationProfile from './ElevationProfile';
 import PlaceCard from './PlaceCard';
+import WalkingDirections from './WalkingDirections';
+import { exportTourAsPdf } from '../services/api';
 
 export default function TourResults({ tour }) {
   const { title, overview, metadata, places, route } = tour;
   const [searchParams] = useSearchParams();
   const [copySuccess, setCopySuccess] = useState(false);
+  const [pdfExporting, setPdfExporting] = useState(false);
 
   // Handle share button click
   const handleShare = async () => {
@@ -18,6 +21,18 @@ export default function TourResults({ tour }) {
       setTimeout(() => setCopySuccess(false), 2000);
     } catch (err) {
       console.error('Failed to copy URL:', err);
+    }
+  };
+
+  // Handle PDF export
+  const handleExportPdf = async () => {
+    setPdfExporting(true);
+    try {
+      await exportTourAsPdf(tour);
+    } catch (error) {
+      alert('Failed to export PDF: ' + error.message);
+    } finally {
+      setPdfExporting(false);
     }
   };
 
@@ -86,6 +101,16 @@ export default function TourResults({ tour }) {
             <span className="maps-icon">🗺️</span>
             <span className="maps-text">Open in Google Maps</span>
           </a>
+          <button
+            className="pdf-button"
+            onClick={handleExportPdf}
+            disabled={pdfExporting}
+          >
+            <span className="pdf-icon">📄</span>
+            <span className="pdf-text">
+              {pdfExporting ? 'Generating PDF...' : 'Download PDF Guide'}
+            </span>
+          </button>
         </div>
       </div>
 
@@ -96,7 +121,17 @@ export default function TourResults({ tour }) {
       <div className="places-list">
         <h3 className="places-header">Your Tour Stops</h3>
         {places.map((place, index) => (
-          <PlaceCard key={place.id} place={place} index={index} />
+          <div key={place.id} className="place-with-directions">
+            <PlaceCard place={place} index={index} />
+            {/* Show walking directions to the next stop */}
+            {index < places.length - 1 && route?.legs && route.legs[index] && (
+              <WalkingDirections
+                leg={route.legs[index]}
+                fromPlace={place}
+                toPlace={places[index + 1]}
+              />
+            )}
+          </div>
         ))}
       </div>
     </div>
