@@ -91,17 +91,17 @@ function twoOptWithFixedStart(inputRoute) {
 }
 
 async function compareAlgorithms() {
-  console.log('>ê GREEDY VS GREEDY+2OPT COMPARISON\n');
+  console.log('>ï¿½ GREEDY VS GREEDY+2OPT COMPARISON\n');
   console.log('='.repeat(70));
 
   const tourData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/temple-tour-factual.json'), 'utf8'));
   const temples = tourData.temples;
 
   const gates = {
-    north: { name: 'Chang Phuak (North)', temple: 'Wat Mai Tang' },
-    east: { name: 'Tha Phae (East)', temple: 'Wat Lam Chang' },
-    south: { name: 'Chiang Mai (South)', temple: 'Wat Sai Moon Muang' },
-    west: { name: 'Suan Dok (West)', temple: 'Wat Phuak Hong' }
+    north: { name: 'Chang Phuak (North)', temple: 'Wat Mo Kham Tuang' },
+    east: { name: 'Tha Phae (East)', temple: 'Wat Dok Kham' },
+    south: { name: 'Chiang Mai (South)', temple: 'Wat Phan Waen' },
+    west: { name: 'Suan Dok (West)', temple: 'Wat Prasat' }
   };
 
   const results = {};
@@ -158,7 +158,7 @@ async function compareAlgorithms() {
   }
 
   fs.writeFileSync(path.join(__dirname, '../data/algorithm-comparison.json'), JSON.stringify(results, null, 2));
-  console.log('\n=¾ Saved: data/algorithm-comparison.json\n');
+  console.log('\n=ï¿½ Saved: data/algorithm-comparison.json\n');
 }
 
 compareAlgorithms().catch(err => console.error(err));

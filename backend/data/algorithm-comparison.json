@@ -2,26 +2,8 @@
   "north": {
     "gate": "Chang Phuak (North)",
     "greedy": {
-      "distance": 7160.400550309382,
+      "distance": 8401.293487758452,
       "route": [
-        {
-          "id": "t10",
-          "name": "Wat Mai Tang",
-          "latitude": 18.795103,
-          "longitude": 98.978598,
-          "verified": true,
-          "factualDescription": "Wat Mai Tang, constructed in 1826 during the reign of King Phra Chao Kawilorot Suriyawong, is a relatively modern temple in Chiang Mai. Its most prominent feature is the large, white chedi, a common architectural element in 19th-century Lanna temples, often housing relics. The temple's viharn exhibits typical Lanna architectural styles of the period, characterized by multi-tiered roofs and intricate wooden carvings.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t3",
-          "name": "Wat Dap Phai",
-          "latitude": 18.793841,
-          "longitude": 98.981537,
-          "verified": true,
-          "factualDescription": "Wat Dap Phai, also known as Wat Duang Di, was founded in 1492 by King Phra Chao Yot Chiang Rai. The temple's most prominent feature is its Lanna-style chedi, which is octagonal and adorned with stucco work. The viharn houses a principal Buddha image in the subduing Mara posture.",
-          "hasPreResearchedFacts": false
-        },
         {
           "id": "t11",
           "name": "Wat Mo Kham Tuang",
@@ -281,31 +263,31 @@
           "longitude": 98.99120555983336,
           "verified": false,
           "factualDescription": "Wat Sai Moon Muang, founded in 1500 CE during the reign of King Mueang Kaeo, features a prominent Lanna-style chedi. The temple's viharn houses a revered Buddha image, and its architecture reflects typical 16th-century Northern Thai temple design with multi-tiered roofs and intricate wood carvings.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t3",
+          "name": "Wat Dap Phai",
+          "latitude": 18.793841,
+          "longitude": 98.981537,
+          "verified": true,
+          "factualDescription": "Wat Dap Phai, also known as Wat Duang Di, was founded in 1492 by King Phra Chao Yot Chiang Rai. The temple's most prominent feature is its Lanna-style chedi, which is octagonal and adorned with stucco work. The viharn houses a principal Buddha image in the subduing Mara posture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t10",
+          "name": "Wat Mai Tang",
+          "latitude": 18.795103,
+          "longitude": 98.978598,
+          "verified": true,
+          "factualDescription": "Wat Mai Tang, constructed in 1826 during the reign of King Phra Chao Kawilorot Suriyawong, is a relatively modern temple in Chiang Mai. Its most prominent feature is the large, white chedi, a common architectural element in 19th-century Lanna temples, often housing relics. The temple's viharn exhibits typical Lanna architectural styles of the period, characterized by multi-tiered roofs and intricate wooden carvings.",
           "hasPreResearchedFacts": false
         }
       ]
     },
     "optimized": {
-      "distance": 6841.792087975525,
+      "distance": 7414.541712985475,
       "route": [
-        {
-          "id": "t10",
-          "name": "Wat Mai Tang",
-          "latitude": 18.795103,
-          "longitude": 98.978598,
-          "verified": true,
-          "factualDescription": "Wat Mai Tang, constructed in 1826 during the reign of King Phra Chao Kawilorot Suriyawong, is a relatively modern temple in Chiang Mai. Its most prominent feature is the large, white chedi, a common architectural element in 19th-century Lanna temples, often housing relics. The temple's viharn exhibits typical Lanna architectural styles of the period, characterized by multi-tiered roofs and intricate wooden carvings.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t3",
-          "name": "Wat Dap Phai",
-          "latitude": 18.793841,
-          "longitude": 98.981537,
-          "verified": true,
-          "factualDescription": "Wat Dap Phai, also known as Wat Duang Di, was founded in 1492 by King Phra Chao Yot Chiang Rai. The temple's most prominent feature is its Lanna-style chedi, which is octagonal and adorned with stucco work. The viharn houses a principal Buddha image in the subduing Mara posture.",
-          "hasPreResearchedFacts": false
-        },
         {
           "id": "t11",
           "name": "Wat Mo Kham Tuang",
@@ -388,6 +370,141 @@
           "hasPreResearchedFacts": false
         },
         {
+          "id": "t16",
+          "name": "Wat Pha Khao",
+          "latitude": 18.7856567,
+          "longitude": 98.99137800677244,
+          "verified": false,
+          "factualDescription": "Wat Phan Khao, also known as Wat Chedi Liam, was founded in 1451 CE by King Tilokaraj. Its most prominent feature is a five-tiered chedi, a common architectural style for Lanna temples of this period, with a square base and niches containing Buddha images. The temple complex also includes a viharn (assembly hall) and an ubosot (ordination hall), typical structures found in 15th-century Lanna Buddhist monasteries.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t26",
+          "name": "Wat Sai Moon Muang",
+          "latitude": 18.781959399999998,
+          "longitude": 98.99120555983336,
+          "verified": false,
+          "factualDescription": "Wat Sai Moon Muang, founded in 1500 CE during the reign of King Mueang Kaeo, features a prominent Lanna-style chedi. The temple's viharn houses a revered Buddha image, and its architecture reflects typical 16th-century Northern Thai temple design with multi-tiered roofs and intricate wood carvings.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t7",
+          "name": "Wat Fon Soi",
+          "latitude": 18.7826308,
+          "longitude": 98.98847983936587,
+          "verified": false,
+          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t18",
+          "name": "Wat Phan Waen",
+          "latitude": 18.783010349999998,
+          "longitude": 98.9857690035494,
+          "verified": false,
+          "factualDescription": "Wat Phan Waen, founded in 1501 CE, is a small temple featuring a Lanna-style ordination hall (ubosot) and a chedi. The temple's name, meaning \"Temple of the Ring,\" is believed to refer to a significant ring once housed here. Its architecture reflects typical 16th-century Lanna temple design, characterized by multi-tiered roofs and intricate wooden carvings.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t23",
+          "name": "Wat Puak Taem",
+          "latitude": 18.782998,
+          "longitude": 98.98325,
+          "verified": true,
+          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t22",
+          "name": "Wat Phuak Hong",
+          "latitude": 18.783025,
+          "longitude": 98.98112,
+          "verified": true,
+          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t13",
+          "name": "Wat Muen Ngoen Kong",
+          "latitude": 18.78552585,
+          "longitude": 98.98066360692809,
+          "verified": false,
+          "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t20",
+          "name": "Wat Phra Singh",
+          "latitude": 18.7882068,
+          "longitude": 98.98137728020629,
+          "verified": false,
+          "factualDescription": "Wat Phra Singh, founded in 1345 by King Pha Yu for his father's ashes, was designated a royal temple of the first grade in 1935. Its Viharn Lai Kham features intricate gold leaf work and 1820s murals, while the Ho Trai library dates back to the late 15th century. A notable bronze standing Buddha, cast in 1477, is also housed within the temple grounds.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t21",
+          "name": "Wat Prasat",
+          "latitude": 18.78977975,
+          "longitude": 98.98102562907825,
+          "verified": false,
+          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t29",
+          "name": "Wat Tung Yu",
+          "latitude": 18.78881365,
+          "longitude": 98.98412670351986,
+          "verified": false,
+          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t28",
+          "name": "Wat Si Koet",
+          "latitude": 18.788116600000002,
+          "longitude": 98.98386969283189,
+          "verified": false,
+          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t19",
+          "name": "Wat Phra Chao Meng Rai",
+          "latitude": 18.78499255,
+          "longitude": 98.98416557358192,
+          "verified": false,
+          "factualDescription": "Wat Phra Chao Meng Rai, founded in 1287 by King Mengrai, is one of Chiang Mai's oldest temples. It features a large, prominent chedi that houses relics and a viharn displaying traditional Lanna architectural elements. The temple's historical significance lies in its direct association with the city's founder.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t0",
+          "name": "Wat Chang Taem",
+          "latitude": 18.78513515,
+          "longitude": 98.98814898994743,
+          "verified": false,
+          "factualDescription": "Wat Chang Taem, founded in 1416 CE by King Sam Fang Kaen, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa) that underwent significant restoration in the 19th century. The temple's name, meaning \"Elephant Painted Temple,\" is believed to derive from murals or sculptures of elephants that once adorned its structures. Its architecture is characteristic of early 15th-century Lanna temple design, emphasizing robust brick construction and intricate stucco work.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t1",
+          "name": "Wat Chedi Luang",
+          "latitude": 18.7871427,
+          "longitude": 98.9867839803562,
+          "verified": false,
+          "factualDescription": "Wat Chedi Luang, founded in 1391 by King Saen Muang Ma for his father's ashes and completed in 1475 under King Tilokarat, originally stood 85 meters tall. It housed the Emerald Buddha from 1468 to 1551, though its upper 30 meters collapsed in a 1545 earthquake, with reconstruction occurring in the 1990s with UNESCO and Japanese support.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t17",
+          "name": "Wat Phan Tao",
+          "latitude": 18.78779125,
+          "longitude": 98.98744462331774,
+          "verified": false,
+          "factualDescription": "Wat Phan Tao, originally built in 1846 as the Ho Kham (royal throne hall) for ruler Mahotaraprathet, was relocated to its current site in 1876. This all-teak structure, 21 meters long and supported by 28 pillars, derives its name, meaning \"thousand kilns,\" from the furnaces used to cast Buddha images. The temple was closed in 2021 for repairs due to insect damage.",
+          "hasPreResearchedFacts": true
+        },
+        {
           "id": "t27",
           "name": "Wat Sam Pao",
           "latitude": 18.788241499999998,
@@ -433,149 +550,239 @@
           "hasPreResearchedFacts": true
         },
         {
-          "id": "t17",
-          "name": "Wat Phan Tao",
-          "latitude": 18.78779125,
-          "longitude": 98.98744462331774,
-          "verified": false,
-          "factualDescription": "Wat Phan Tao, originally built in 1846 as the Ho Kham (royal throne hall) for ruler Mahotaraprathet, was relocated to its current site in 1876. This all-teak structure, 21 meters long and supported by 28 pillars, derives its name, meaning \"thousand kilns,\" from the furnaces used to cast Buddha images. The temple was closed in 2021 for repairs due to insect damage.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t1",
-          "name": "Wat Chedi Luang",
-          "latitude": 18.7871427,
-          "longitude": 98.9867839803562,
-          "verified": false,
-          "factualDescription": "Wat Chedi Luang, founded in 1391 by King Saen Muang Ma for his father's ashes and completed in 1475 under King Tilokarat, originally stood 85 meters tall. It housed the Emerald Buddha from 1468 to 1551, though its upper 30 meters collapsed in a 1545 earthquake, with reconstruction occurring in the 1990s with UNESCO and Japanese support.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t19",
-          "name": "Wat Phra Chao Meng Rai",
-          "latitude": 18.78499255,
-          "longitude": 98.98416557358192,
-          "verified": false,
-          "factualDescription": "Wat Phra Chao Meng Rai, founded in 1287 by King Mengrai, is one of Chiang Mai's oldest temples. It features a large, prominent chedi that houses relics and a viharn displaying traditional Lanna architectural elements. The temple's historical significance lies in its direct association with the city's founder.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t28",
-          "name": "Wat Si Koet",
-          "latitude": 18.788116600000002,
-          "longitude": 98.98386969283189,
-          "verified": false,
-          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t29",
-          "name": "Wat Tung Yu",
-          "latitude": 18.78881365,
-          "longitude": 98.98412670351986,
-          "verified": false,
-          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t21",
-          "name": "Wat Prasat",
-          "latitude": 18.78977975,
-          "longitude": 98.98102562907825,
-          "verified": false,
-          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t20",
-          "name": "Wat Phra Singh",
-          "latitude": 18.7882068,
-          "longitude": 98.98137728020629,
-          "verified": false,
-          "factualDescription": "Wat Phra Singh, founded in 1345 by King Pha Yu for his father's ashes, was designated a royal temple of the first grade in 1935. Its Viharn Lai Kham features intricate gold leaf work and 1820s murals, while the Ho Trai library dates back to the late 15th century. A notable bronze standing Buddha, cast in 1477, is also housed within the temple grounds.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t13",
-          "name": "Wat Muen Ngoen Kong",
-          "latitude": 18.78552585,
-          "longitude": 98.98066360692809,
-          "verified": false,
-          "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t22",
-          "name": "Wat Phuak Hong",
-          "latitude": 18.783025,
-          "longitude": 98.98112,
+          "id": "t3",
+          "name": "Wat Dap Phai",
+          "latitude": 18.793841,
+          "longitude": 98.981537,
           "verified": true,
-          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
-          "hasPreResearchedFacts": true
+          "factualDescription": "Wat Dap Phai, also known as Wat Duang Di, was founded in 1492 by King Phra Chao Yot Chiang Rai. The temple's most prominent feature is its Lanna-style chedi, which is octagonal and adorned with stucco work. The viharn houses a principal Buddha image in the subduing Mara posture.",
+          "hasPreResearchedFacts": false
         },
         {
-          "id": "t23",
-          "name": "Wat Puak Taem",
-          "latitude": 18.782998,
-          "longitude": 98.98325,
+          "id": "t10",
+          "name": "Wat Mai Tang",
+          "latitude": 18.795103,
+          "longitude": 98.978598,
           "verified": true,
-          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t18",
-          "name": "Wat Phan Waen",
-          "latitude": 18.783010349999998,
-          "longitude": 98.9857690035494,
-          "verified": false,
-          "factualDescription": "Wat Phan Waen, founded in 1501 CE, is a small temple featuring a Lanna-style ordination hall (ubosot) and a chedi. The temple's name, meaning \"Temple of the Ring,\" is believed to refer to a significant ring once housed here. Its architecture reflects typical 16th-century Lanna temple design, characterized by multi-tiered roofs and intricate wooden carvings.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t7",
-          "name": "Wat Fon Soi",
-          "latitude": 18.7826308,
-          "longitude": 98.98847983936587,
-          "verified": false,
-          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t0",
-          "name": "Wat Chang Taem",
-          "latitude": 18.78513515,
-          "longitude": 98.98814898994743,
-          "verified": false,
-          "factualDescription": "Wat Chang Taem, founded in 1416 CE by King Sam Fang Kaen, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa) that underwent significant restoration in the 19th century. The temple's name, meaning \"Elephant Painted Temple,\" is believed to derive from murals or sculptures of elephants that once adorned its structures. Its architecture is characteristic of early 15th-century Lanna temple design, emphasizing robust brick construction and intricate stucco work.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t16",
-          "name": "Wat Pha Khao",
-          "latitude": 18.7856567,
-          "longitude": 98.99137800677244,
-          "verified": false,
-          "factualDescription": "Wat Phan Khao, also known as Wat Chedi Liam, was founded in 1451 CE by King Tilokaraj. Its most prominent feature is a five-tiered chedi, a common architectural style for Lanna temples of this period, with a square base and niches containing Buddha images. The temple complex also includes a viharn (assembly hall) and an ubosot (ordination hall), typical structures found in 15th-century Lanna Buddhist monasteries.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t26",
-          "name": "Wat Sai Moon Muang",
-          "latitude": 18.781959399999998,
-          "longitude": 98.99120555983336,
-          "verified": false,
-          "factualDescription": "Wat Sai Moon Muang, founded in 1500 CE during the reign of King Mueang Kaeo, features a prominent Lanna-style chedi. The temple's viharn houses a revered Buddha image, and its architecture reflects typical 16th-century Northern Thai temple design with multi-tiered roofs and intricate wood carvings.",
+          "factualDescription": "Wat Mai Tang, constructed in 1826 during the reign of King Phra Chao Kawilorot Suriyawong, is a relatively modern temple in Chiang Mai. Its most prominent feature is the large, white chedi, a common architectural element in 19th-century Lanna temples, often housing relics. The temple's viharn exhibits typical Lanna architectural styles of the period, characterized by multi-tiered roofs and intricate wooden carvings.",
           "hasPreResearchedFacts": false
         }
       ]
     },
-    "improvement": 4.449589936977635
+    "improvement": 11.74523632831987
   },
   "east": {
     "gate": "Tha Phae (East)",
     "greedy": {
-      "distance": 7570.856576014222,
+      "distance": 8110.518442636705,
       "route": [
+        {
+          "id": "t5",
+          "name": "Wat Dok Kham",
+          "latitude": 18.78925315,
+          "longitude": 98.99298681170362,
+          "verified": false,
+          "factualDescription": "Wat Dok Kham, founded in 1432 CE during the reign of King Sam Fang Kaen, features a large, square-based chedi typical of Lanna architecture from the 15th century. The temple's viharn, though largely rebuilt, retains some original foundation stones and a significant Buddha image, likely from the early 16th century, in the subduing Mara posture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t4",
+          "name": "Wat Dok Euang",
+          "latitude": 18.790270200000002,
+          "longitude": 98.99248362668214,
+          "verified": false,
+          "factualDescription": "Wat Dok Euang, established in 1450 CE, features a Lanna-style *ubosot* (ordination hall) with a multi-tiered roof. The temple's main *chedi* (stupa) is a whitewashed bell-shaped structure, characteristic of 15th-century Lanna temple architecture, and houses a Buddha relic.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t12",
+          "name": "Wat Muen Larn",
+          "latitude": 18.788096600000003,
+          "longitude": 98.99208268790247,
+          "verified": false,
+          "factualDescription": "Wat Muen Larn, meaning \"Temple of Ten Million,\" was constructed in 1501 during the reign of King Mueang Kaeo. Its most notable feature is the large, Lanna-style chedi, which houses a Buddha relic. The temple also contains a viharn with a multi-tiered roof, typical of 16th-century Lanna architecture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t27",
+          "name": "Wat Sam Pao",
+          "latitude": 18.788241499999998,
+          "longitude": 98.99057829948987,
+          "verified": false,
+          "factualDescription": "Wat Sam Pao is a small temple, likely dating from the Lanna period, characterized by its modest size and traditional Lanna architectural elements. Its main viharn houses a Buddha image, and a small chedi stands within the temple grounds, typical of smaller community temples from the era.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t15",
+          "name": "Wat Pan Ping",
+          "latitude": 18.788868,
+          "longitude": 98.990604,
+          "verified": true,
+          "factualDescription": "Wat Pan Ping, founded in 1471 by King Tilokaraj, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa). The temple is known for its stucco work depicting celestial beings and its large, seated Buddha image within the main *wihan* (assembly hall).",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t30",
+          "name": "Wat Umong Maha Therachan",
+          "latitude": 18.78945365,
+          "longitude": 98.98988705117229,
+          "verified": false,
+          "factualDescription": "Wat Umong Maha Therachan, also known as Wat Umong Suan Phutthatham, is a forest temple established in 1297 by King Mengrai for the monk Phra Maha Thera Jan. Its distinctive feature is a series of brick tunnels (umong) built into a man-made mound, which served as meditation chambers. Above the tunnels stands a large, bell-shaped Lanna-style chedi, rebuilt in the 14th century.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t6",
+          "name": "Wat Duang Dee",
+          "latitude": 18.7894799,
+          "longitude": 98.98849686223059,
+          "verified": false,
+          "factualDescription": "Wat Duang Dee, established in 1488, features a Lanna-style ordination hall (ubosot) with a three-tiered roof and a gilded chedi. The temple is known for its large bronze Buddha image, Phra Chao Thong Thip, housed within the viharn.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t24",
+          "name": "Wat Inthakhin Sadue Muang",
+          "latitude": 18.789528,
+          "longitude": 98.987024,
+          "verified": true,
+          "factualDescription": "Wat Inthakhin Sadue Muang, meaning \"navel of the city,\" originally housed Chiang Mai's city pillar (Inthakin) erected by King Mengrai in 1296. The pillar was relocated to Wat Chedi Luang in 1800 by King Kawila, and the temple now features a modern viharn containing a Lanna Kingdom museum.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t17",
+          "name": "Wat Phan Tao",
+          "latitude": 18.78779125,
+          "longitude": 98.98744462331774,
+          "verified": false,
+          "factualDescription": "Wat Phan Tao, originally built in 1846 as the Ho Kham (royal throne hall) for ruler Mahotaraprathet, was relocated to its current site in 1876. This all-teak structure, 21 meters long and supported by 28 pillars, derives its name, meaning \"thousand kilns,\" from the furnaces used to cast Buddha images. The temple was closed in 2021 for repairs due to insect damage.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t1",
+          "name": "Wat Chedi Luang",
+          "latitude": 18.7871427,
+          "longitude": 98.9867839803562,
+          "verified": false,
+          "factualDescription": "Wat Chedi Luang, founded in 1391 by King Saen Muang Ma for his father's ashes and completed in 1475 under King Tilokarat, originally stood 85 meters tall. It housed the Emerald Buddha from 1468 to 1551, though its upper 30 meters collapsed in a 1545 earthquake, with reconstruction occurring in the 1990s with UNESCO and Japanese support.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t0",
+          "name": "Wat Chang Taem",
+          "latitude": 18.78513515,
+          "longitude": 98.98814898994743,
+          "verified": false,
+          "factualDescription": "Wat Chang Taem, founded in 1416 CE by King Sam Fang Kaen, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa) that underwent significant restoration in the 19th century. The temple's name, meaning \"Elephant Painted Temple,\" is believed to derive from murals or sculptures of elephants that once adorned its structures. Its architecture is characteristic of early 15th-century Lanna temple design, emphasizing robust brick construction and intricate stucco work.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t7",
+          "name": "Wat Fon Soi",
+          "latitude": 18.7826308,
+          "longitude": 98.98847983936587,
+          "verified": false,
+          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t18",
+          "name": "Wat Phan Waen",
+          "latitude": 18.783010349999998,
+          "longitude": 98.9857690035494,
+          "verified": false,
+          "factualDescription": "Wat Phan Waen, founded in 1501 CE, is a small temple featuring a Lanna-style ordination hall (ubosot) and a chedi. The temple's name, meaning \"Temple of the Ring,\" is believed to refer to a significant ring once housed here. Its architecture reflects typical 16th-century Lanna temple design, characterized by multi-tiered roofs and intricate wooden carvings.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t23",
+          "name": "Wat Puak Taem",
+          "latitude": 18.782998,
+          "longitude": 98.98325,
+          "verified": true,
+          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t22",
+          "name": "Wat Phuak Hong",
+          "latitude": 18.783025,
+          "longitude": 98.98112,
+          "verified": true,
+          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t13",
+          "name": "Wat Muen Ngoen Kong",
+          "latitude": 18.78552585,
+          "longitude": 98.98066360692809,
+          "verified": false,
+          "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t20",
+          "name": "Wat Phra Singh",
+          "latitude": 18.7882068,
+          "longitude": 98.98137728020629,
+          "verified": false,
+          "factualDescription": "Wat Phra Singh, founded in 1345 by King Pha Yu for his father's ashes, was designated a royal temple of the first grade in 1935. Its Viharn Lai Kham features intricate gold leaf work and 1820s murals, while the Ho Trai library dates back to the late 15th century. A notable bronze standing Buddha, cast in 1477, is also housed within the temple grounds.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t21",
+          "name": "Wat Prasat",
+          "latitude": 18.78977975,
+          "longitude": 98.98102562907825,
+          "verified": false,
+          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t29",
+          "name": "Wat Tung Yu",
+          "latitude": 18.78881365,
+          "longitude": 98.98412670351986,
+          "verified": false,
+          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t28",
+          "name": "Wat Si Koet",
+          "latitude": 18.788116600000002,
+          "longitude": 98.98386969283189,
+          "verified": false,
+          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t19",
+          "name": "Wat Phra Chao Meng Rai",
+          "latitude": 18.78499255,
+          "longitude": 98.98416557358192,
+          "verified": false,
+          "factualDescription": "Wat Phra Chao Meng Rai, founded in 1287 by King Mengrai, is one of Chiang Mai's oldest temples. It features a large, prominent chedi that houses relics and a viharn displaying traditional Lanna architectural elements. The temple's historical significance lies in its direct association with the city's founder.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t16",
+          "name": "Wat Pha Khao",
+          "latitude": 18.7856567,
+          "longitude": 98.99137800677244,
+          "verified": false,
+          "factualDescription": "Wat Phan Khao, also known as Wat Chedi Liam, was founded in 1451 CE by King Tilokaraj. Its most prominent feature is a five-tiered chedi, a common architectural style for Lanna temples of this period, with a square base and niches containing Buddha images. The temple complex also includes a viharn (assembly hall) and an ubosot (ordination hall), typical structures found in 15th-century Lanna Buddhist monasteries.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t26",
+          "name": "Wat Sai Moon Muang",
+          "latitude": 18.781959399999998,
+          "longitude": 98.99120555983336,
+          "verified": false,
+          "factualDescription": "Wat Sai Moon Muang, founded in 1500 CE during the reign of King Mueang Kaeo, features a prominent Lanna-style chedi. The temple's viharn houses a revered Buddha image, and its architecture reflects typical 16th-century Northern Thai temple design with multi-tiered roofs and intricate wood carvings.",
+          "hasPreResearchedFacts": false
+        },
         {
           "id": "t9",
           "name": "Wat Lam Chang",
@@ -646,220 +853,220 @@
           "longitude": 98.978598,
           "verified": true,
           "factualDescription": "Wat Mai Tang, constructed in 1826 during the reign of King Phra Chao Kawilorot Suriyawong, is a relatively modern temple in Chiang Mai. Its most prominent feature is the large, white chedi, a common architectural element in 19th-century Lanna temples, often housing relics. The temple's viharn exhibits typical Lanna architectural styles of the period, characterized by multi-tiered roofs and intricate wooden carvings.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t21",
-          "name": "Wat Prasat",
-          "latitude": 18.78977975,
-          "longitude": 98.98102562907825,
-          "verified": false,
-          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t20",
-          "name": "Wat Phra Singh",
-          "latitude": 18.7882068,
-          "longitude": 98.98137728020629,
-          "verified": false,
-          "factualDescription": "Wat Phra Singh, founded in 1345 by King Pha Yu for his father's ashes, was designated a royal temple of the first grade in 1935. Its Viharn Lai Kham features intricate gold leaf work and 1820s murals, while the Ho Trai library dates back to the late 15th century. A notable bronze standing Buddha, cast in 1477, is also housed within the temple grounds.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t28",
-          "name": "Wat Si Koet",
-          "latitude": 18.788116600000002,
-          "longitude": 98.98386969283189,
-          "verified": false,
-          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t29",
-          "name": "Wat Tung Yu",
-          "latitude": 18.78881365,
-          "longitude": 98.98412670351986,
-          "verified": false,
-          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t24",
-          "name": "Wat Inthakhin Sadue Muang",
-          "latitude": 18.789528,
-          "longitude": 98.987024,
-          "verified": true,
-          "factualDescription": "Wat Inthakhin Sadue Muang, meaning \"navel of the city,\" originally housed Chiang Mai's city pillar (Inthakin) erected by King Mengrai in 1296. The pillar was relocated to Wat Chedi Luang in 1800 by King Kawila, and the temple now features a modern viharn containing a Lanna Kingdom museum.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t6",
-          "name": "Wat Duang Dee",
-          "latitude": 18.7894799,
-          "longitude": 98.98849686223059,
-          "verified": false,
-          "factualDescription": "Wat Duang Dee, established in 1488, features a Lanna-style ordination hall (ubosot) with a three-tiered roof and a gilded chedi. The temple is known for its large bronze Buddha image, Phra Chao Thong Thip, housed within the viharn.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t30",
-          "name": "Wat Umong Maha Therachan",
-          "latitude": 18.78945365,
-          "longitude": 98.98988705117229,
-          "verified": false,
-          "factualDescription": "Wat Umong Maha Therachan, also known as Wat Umong Suan Phutthatham, is a forest temple established in 1297 by King Mengrai for the monk Phra Maha Thera Jan. Its distinctive feature is a series of brick tunnels (umong) built into a man-made mound, which served as meditation chambers. Above the tunnels stands a large, bell-shaped Lanna-style chedi, rebuilt in the 14th century.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t15",
-          "name": "Wat Pan Ping",
-          "latitude": 18.788868,
-          "longitude": 98.990604,
-          "verified": true,
-          "factualDescription": "Wat Pan Ping, founded in 1471 by King Tilokaraj, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa). The temple is known for its stucco work depicting celestial beings and its large, seated Buddha image within the main *wihan* (assembly hall).",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t27",
-          "name": "Wat Sam Pao",
-          "latitude": 18.788241499999998,
-          "longitude": 98.99057829948987,
-          "verified": false,
-          "factualDescription": "Wat Sam Pao is a small temple, likely dating from the Lanna period, characterized by its modest size and traditional Lanna architectural elements. Its main viharn houses a Buddha image, and a small chedi stands within the temple grounds, typical of smaller community temples from the era.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t12",
-          "name": "Wat Muen Larn",
-          "latitude": 18.788096600000003,
-          "longitude": 98.99208268790247,
-          "verified": false,
-          "factualDescription": "Wat Muen Larn, meaning \"Temple of Ten Million,\" was constructed in 1501 during the reign of King Mueang Kaeo. Its most notable feature is the large, Lanna-style chedi, which houses a Buddha relic. The temple also contains a viharn with a multi-tiered roof, typical of 16th-century Lanna architecture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t5",
-          "name": "Wat Dok Kham",
-          "latitude": 18.78925315,
-          "longitude": 98.99298681170362,
-          "verified": false,
-          "factualDescription": "Wat Dok Kham, founded in 1432 CE during the reign of King Sam Fang Kaen, features a large, square-based chedi typical of Lanna architecture from the 15th century. The temple's viharn, though largely rebuilt, retains some original foundation stones and a significant Buddha image, likely from the early 16th century, in the subduing Mara posture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t4",
-          "name": "Wat Dok Euang",
-          "latitude": 18.790270200000002,
-          "longitude": 98.99248362668214,
-          "verified": false,
-          "factualDescription": "Wat Dok Euang, established in 1450 CE, features a Lanna-style *ubosot* (ordination hall) with a multi-tiered roof. The temple's main *chedi* (stupa) is a whitewashed bell-shaped structure, characteristic of 15th-century Lanna temple architecture, and houses a Buddha relic.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t16",
-          "name": "Wat Pha Khao",
-          "latitude": 18.7856567,
-          "longitude": 98.99137800677244,
-          "verified": false,
-          "factualDescription": "Wat Phan Khao, also known as Wat Chedi Liam, was founded in 1451 CE by King Tilokaraj. Its most prominent feature is a five-tiered chedi, a common architectural style for Lanna temples of this period, with a square base and niches containing Buddha images. The temple complex also includes a viharn (assembly hall) and an ubosot (ordination hall), typical structures found in 15th-century Lanna Buddhist monasteries.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t0",
-          "name": "Wat Chang Taem",
-          "latitude": 18.78513515,
-          "longitude": 98.98814898994743,
-          "verified": false,
-          "factualDescription": "Wat Chang Taem, founded in 1416 CE by King Sam Fang Kaen, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa) that underwent significant restoration in the 19th century. The temple's name, meaning \"Elephant Painted Temple,\" is believed to derive from murals or sculptures of elephants that once adorned its structures. Its architecture is characteristic of early 15th-century Lanna temple design, emphasizing robust brick construction and intricate stucco work.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t1",
-          "name": "Wat Chedi Luang",
-          "latitude": 18.7871427,
-          "longitude": 98.9867839803562,
-          "verified": false,
-          "factualDescription": "Wat Chedi Luang, founded in 1391 by King Saen Muang Ma for his father's ashes and completed in 1475 under King Tilokarat, originally stood 85 meters tall. It housed the Emerald Buddha from 1468 to 1551, though its upper 30 meters collapsed in a 1545 earthquake, with reconstruction occurring in the 1990s with UNESCO and Japanese support.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t17",
-          "name": "Wat Phan Tao",
-          "latitude": 18.78779125,
-          "longitude": 98.98744462331774,
-          "verified": false,
-          "factualDescription": "Wat Phan Tao, originally built in 1846 as the Ho Kham (royal throne hall) for ruler Mahotaraprathet, was relocated to its current site in 1876. This all-teak structure, 21 meters long and supported by 28 pillars, derives its name, meaning \"thousand kilns,\" from the furnaces used to cast Buddha images. The temple was closed in 2021 for repairs due to insect damage.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t19",
-          "name": "Wat Phra Chao Meng Rai",
-          "latitude": 18.78499255,
-          "longitude": 98.98416557358192,
-          "verified": false,
-          "factualDescription": "Wat Phra Chao Meng Rai, founded in 1287 by King Mengrai, is one of Chiang Mai's oldest temples. It features a large, prominent chedi that houses relics and a viharn displaying traditional Lanna architectural elements. The temple's historical significance lies in its direct association with the city's founder.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t23",
-          "name": "Wat Puak Taem",
-          "latitude": 18.782998,
-          "longitude": 98.98325,
-          "verified": true,
-          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t22",
-          "name": "Wat Phuak Hong",
-          "latitude": 18.783025,
-          "longitude": 98.98112,
-          "verified": true,
-          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t13",
-          "name": "Wat Muen Ngoen Kong",
-          "latitude": 18.78552585,
-          "longitude": 98.98066360692809,
-          "verified": false,
-          "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t18",
-          "name": "Wat Phan Waen",
-          "latitude": 18.783010349999998,
-          "longitude": 98.9857690035494,
-          "verified": false,
-          "factualDescription": "Wat Phan Waen, founded in 1501 CE, is a small temple featuring a Lanna-style ordination hall (ubosot) and a chedi. The temple's name, meaning \"Temple of the Ring,\" is believed to refer to a significant ring once housed here. Its architecture reflects typical 16th-century Lanna temple design, characterized by multi-tiered roofs and intricate wooden carvings.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t7",
-          "name": "Wat Fon Soi",
-          "latitude": 18.7826308,
-          "longitude": 98.98847983936587,
-          "verified": false,
-          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t26",
-          "name": "Wat Sai Moon Muang",
-          "latitude": 18.781959399999998,
-          "longitude": 98.99120555983336,
-          "verified": false,
-          "factualDescription": "Wat Sai Moon Muang, founded in 1500 CE during the reign of King Mueang Kaeo, features a prominent Lanna-style chedi. The temple's viharn houses a revered Buddha image, and its architecture reflects typical 16th-century Northern Thai temple design with multi-tiered roofs and intricate wood carvings.",
           "hasPreResearchedFacts": false
         }
       ]
     },
     "optimized": {
-      "distance": 7441.429446220022,
+      "distance": 7188.048200848532,
       "route": [
+        {
+          "id": "t5",
+          "name": "Wat Dok Kham",
+          "latitude": 18.78925315,
+          "longitude": 98.99298681170362,
+          "verified": false,
+          "factualDescription": "Wat Dok Kham, founded in 1432 CE during the reign of King Sam Fang Kaen, features a large, square-based chedi typical of Lanna architecture from the 15th century. The temple's viharn, though largely rebuilt, retains some original foundation stones and a significant Buddha image, likely from the early 16th century, in the subduing Mara posture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t4",
+          "name": "Wat Dok Euang",
+          "latitude": 18.790270200000002,
+          "longitude": 98.99248362668214,
+          "verified": false,
+          "factualDescription": "Wat Dok Euang, established in 1450 CE, features a Lanna-style *ubosot* (ordination hall) with a multi-tiered roof. The temple's main *chedi* (stupa) is a whitewashed bell-shaped structure, characteristic of 15th-century Lanna temple architecture, and houses a Buddha relic.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t12",
+          "name": "Wat Muen Larn",
+          "latitude": 18.788096600000003,
+          "longitude": 98.99208268790247,
+          "verified": false,
+          "factualDescription": "Wat Muen Larn, meaning \"Temple of Ten Million,\" was constructed in 1501 during the reign of King Mueang Kaeo. Its most notable feature is the large, Lanna-style chedi, which houses a Buddha relic. The temple also contains a viharn with a multi-tiered roof, typical of 16th-century Lanna architecture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t16",
+          "name": "Wat Pha Khao",
+          "latitude": 18.7856567,
+          "longitude": 98.99137800677244,
+          "verified": false,
+          "factualDescription": "Wat Phan Khao, also known as Wat Chedi Liam, was founded in 1451 CE by King Tilokaraj. Its most prominent feature is a five-tiered chedi, a common architectural style for Lanna temples of this period, with a square base and niches containing Buddha images. The temple complex also includes a viharn (assembly hall) and an ubosot (ordination hall), typical structures found in 15th-century Lanna Buddhist monasteries.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t26",
+          "name": "Wat Sai Moon Muang",
+          "latitude": 18.781959399999998,
+          "longitude": 98.99120555983336,
+          "verified": false,
+          "factualDescription": "Wat Sai Moon Muang, founded in 1500 CE during the reign of King Mueang Kaeo, features a prominent Lanna-style chedi. The temple's viharn houses a revered Buddha image, and its architecture reflects typical 16th-century Northern Thai temple design with multi-tiered roofs and intricate wood carvings.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t7",
+          "name": "Wat Fon Soi",
+          "latitude": 18.7826308,
+          "longitude": 98.98847983936587,
+          "verified": false,
+          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t18",
+          "name": "Wat Phan Waen",
+          "latitude": 18.783010349999998,
+          "longitude": 98.9857690035494,
+          "verified": false,
+          "factualDescription": "Wat Phan Waen, founded in 1501 CE, is a small temple featuring a Lanna-style ordination hall (ubosot) and a chedi. The temple's name, meaning \"Temple of the Ring,\" is believed to refer to a significant ring once housed here. Its architecture reflects typical 16th-century Lanna temple design, characterized by multi-tiered roofs and intricate wooden carvings.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t23",
+          "name": "Wat Puak Taem",
+          "latitude": 18.782998,
+          "longitude": 98.98325,
+          "verified": true,
+          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t22",
+          "name": "Wat Phuak Hong",
+          "latitude": 18.783025,
+          "longitude": 98.98112,
+          "verified": true,
+          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t13",
+          "name": "Wat Muen Ngoen Kong",
+          "latitude": 18.78552585,
+          "longitude": 98.98066360692809,
+          "verified": false,
+          "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t20",
+          "name": "Wat Phra Singh",
+          "latitude": 18.7882068,
+          "longitude": 98.98137728020629,
+          "verified": false,
+          "factualDescription": "Wat Phra Singh, founded in 1345 by King Pha Yu for his father's ashes, was designated a royal temple of the first grade in 1935. Its Viharn Lai Kham features intricate gold leaf work and 1820s murals, while the Ho Trai library dates back to the late 15th century. A notable bronze standing Buddha, cast in 1477, is also housed within the temple grounds.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t21",
+          "name": "Wat Prasat",
+          "latitude": 18.78977975,
+          "longitude": 98.98102562907825,
+          "verified": false,
+          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t29",
+          "name": "Wat Tung Yu",
+          "latitude": 18.78881365,
+          "longitude": 98.98412670351986,
+          "verified": false,
+          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t28",
+          "name": "Wat Si Koet",
+          "latitude": 18.788116600000002,
+          "longitude": 98.98386969283189,
+          "verified": false,
+          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t19",
+          "name": "Wat Phra Chao Meng Rai",
+          "latitude": 18.78499255,
+          "longitude": 98.98416557358192,
+          "verified": false,
+          "factualDescription": "Wat Phra Chao Meng Rai, founded in 1287 by King Mengrai, is one of Chiang Mai's oldest temples. It features a large, prominent chedi that houses relics and a viharn displaying traditional Lanna architectural elements. The temple's historical significance lies in its direct association with the city's founder.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t0",
+          "name": "Wat Chang Taem",
+          "latitude": 18.78513515,
+          "longitude": 98.98814898994743,
+          "verified": false,
+          "factualDescription": "Wat Chang Taem, founded in 1416 CE by King Sam Fang Kaen, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa) that underwent significant restoration in the 19th century. The temple's name, meaning \"Elephant Painted Temple,\" is believed to derive from murals or sculptures of elephants that once adorned its structures. Its architecture is characteristic of early 15th-century Lanna temple design, emphasizing robust brick construction and intricate stucco work.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t1",
+          "name": "Wat Chedi Luang",
+          "latitude": 18.7871427,
+          "longitude": 98.9867839803562,
+          "verified": false,
+          "factualDescription": "Wat Chedi Luang, founded in 1391 by King Saen Muang Ma for his father's ashes and completed in 1475 under King Tilokarat, originally stood 85 meters tall. It housed the Emerald Buddha from 1468 to 1551, though its upper 30 meters collapsed in a 1545 earthquake, with reconstruction occurring in the 1990s with UNESCO and Japanese support.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t17",
+          "name": "Wat Phan Tao",
+          "latitude": 18.78779125,
+          "longitude": 98.98744462331774,
+          "verified": false,
+          "factualDescription": "Wat Phan Tao, originally built in 1846 as the Ho Kham (royal throne hall) for ruler Mahotaraprathet, was relocated to its current site in 1876. This all-teak structure, 21 meters long and supported by 28 pillars, derives its name, meaning \"thousand kilns,\" from the furnaces used to cast Buddha images. The temple was closed in 2021 for repairs due to insect damage.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t24",
+          "name": "Wat Inthakhin Sadue Muang",
+          "latitude": 18.789528,
+          "longitude": 98.987024,
+          "verified": true,
+          "factualDescription": "Wat Inthakhin Sadue Muang, meaning \"navel of the city,\" originally housed Chiang Mai's city pillar (Inthakin) erected by King Mengrai in 1296. The pillar was relocated to Wat Chedi Luang in 1800 by King Kawila, and the temple now features a modern viharn containing a Lanna Kingdom museum.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t6",
+          "name": "Wat Duang Dee",
+          "latitude": 18.7894799,
+          "longitude": 98.98849686223059,
+          "verified": false,
+          "factualDescription": "Wat Duang Dee, established in 1488, features a Lanna-style ordination hall (ubosot) with a three-tiered roof and a gilded chedi. The temple is known for its large bronze Buddha image, Phra Chao Thong Thip, housed within the viharn.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t27",
+          "name": "Wat Sam Pao",
+          "latitude": 18.788241499999998,
+          "longitude": 98.99057829948987,
+          "verified": false,
+          "factualDescription": "Wat Sam Pao is a small temple, likely dating from the Lanna period, characterized by its modest size and traditional Lanna architectural elements. Its main viharn houses a Buddha image, and a small chedi stands within the temple grounds, typical of smaller community temples from the era.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t15",
+          "name": "Wat Pan Ping",
+          "latitude": 18.788868,
+          "longitude": 98.990604,
+          "verified": true,
+          "factualDescription": "Wat Pan Ping, founded in 1471 by King Tilokaraj, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa). The temple is known for its stucco work depicting celestial beings and its large, seated Buddha image within the main *wihan* (assembly hall).",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t30",
+          "name": "Wat Umong Maha Therachan",
+          "latitude": 18.78945365,
+          "longitude": 98.98988705117229,
+          "verified": false,
+          "factualDescription": "Wat Umong Maha Therachan, also known as Wat Umong Suan Phutthatham, is a forest temple established in 1297 by King Mengrai for the monk Phra Maha Thera Jan. Its distinctive feature is a series of brick tunnels (umong) built into a man-made mound, which served as meditation chambers. Above the tunnels stands a large, bell-shaped Lanna-style chedi, rebuilt in the 14th century.",
+          "hasPreResearchedFacts": false
+        },
         {
           "id": "t9",
           "name": "Wat Lam Chang",
@@ -931,248 +1138,86 @@
           "verified": true,
           "factualDescription": "Wat Mai Tang, constructed in 1826 during the reign of King Phra Chao Kawilorot Suriyawong, is a relatively modern temple in Chiang Mai. Its most prominent feature is the large, white chedi, a common architectural element in 19th-century Lanna temples, often housing relics. The temple's viharn exhibits typical Lanna architectural styles of the period, characterized by multi-tiered roofs and intricate wooden carvings.",
           "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t21",
-          "name": "Wat Prasat",
-          "latitude": 18.78977975,
-          "longitude": 98.98102562907825,
-          "verified": false,
-          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t20",
-          "name": "Wat Phra Singh",
-          "latitude": 18.7882068,
-          "longitude": 98.98137728020629,
-          "verified": false,
-          "factualDescription": "Wat Phra Singh, founded in 1345 by King Pha Yu for his father's ashes, was designated a royal temple of the first grade in 1935. Its Viharn Lai Kham features intricate gold leaf work and 1820s murals, while the Ho Trai library dates back to the late 15th century. A notable bronze standing Buddha, cast in 1477, is also housed within the temple grounds.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t28",
-          "name": "Wat Si Koet",
-          "latitude": 18.788116600000002,
-          "longitude": 98.98386969283189,
-          "verified": false,
-          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t29",
-          "name": "Wat Tung Yu",
-          "latitude": 18.78881365,
-          "longitude": 98.98412670351986,
-          "verified": false,
-          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t24",
-          "name": "Wat Inthakhin Sadue Muang",
-          "latitude": 18.789528,
-          "longitude": 98.987024,
-          "verified": true,
-          "factualDescription": "Wat Inthakhin Sadue Muang, meaning \"navel of the city,\" originally housed Chiang Mai's city pillar (Inthakin) erected by King Mengrai in 1296. The pillar was relocated to Wat Chedi Luang in 1800 by King Kawila, and the temple now features a modern viharn containing a Lanna Kingdom museum.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t6",
-          "name": "Wat Duang Dee",
-          "latitude": 18.7894799,
-          "longitude": 98.98849686223059,
-          "verified": false,
-          "factualDescription": "Wat Duang Dee, established in 1488, features a Lanna-style ordination hall (ubosot) with a three-tiered roof and a gilded chedi. The temple is known for its large bronze Buddha image, Phra Chao Thong Thip, housed within the viharn.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t30",
-          "name": "Wat Umong Maha Therachan",
-          "latitude": 18.78945365,
-          "longitude": 98.98988705117229,
-          "verified": false,
-          "factualDescription": "Wat Umong Maha Therachan, also known as Wat Umong Suan Phutthatham, is a forest temple established in 1297 by King Mengrai for the monk Phra Maha Thera Jan. Its distinctive feature is a series of brick tunnels (umong) built into a man-made mound, which served as meditation chambers. Above the tunnels stands a large, bell-shaped Lanna-style chedi, rebuilt in the 14th century.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t15",
-          "name": "Wat Pan Ping",
-          "latitude": 18.788868,
-          "longitude": 98.990604,
-          "verified": true,
-          "factualDescription": "Wat Pan Ping, founded in 1471 by King Tilokaraj, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa). The temple is known for its stucco work depicting celestial beings and its large, seated Buddha image within the main *wihan* (assembly hall).",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t4",
-          "name": "Wat Dok Euang",
-          "latitude": 18.790270200000002,
-          "longitude": 98.99248362668214,
-          "verified": false,
-          "factualDescription": "Wat Dok Euang, established in 1450 CE, features a Lanna-style *ubosot* (ordination hall) with a multi-tiered roof. The temple's main *chedi* (stupa) is a whitewashed bell-shaped structure, characteristic of 15th-century Lanna temple architecture, and houses a Buddha relic.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t5",
-          "name": "Wat Dok Kham",
-          "latitude": 18.78925315,
-          "longitude": 98.99298681170362,
-          "verified": false,
-          "factualDescription": "Wat Dok Kham, founded in 1432 CE during the reign of King Sam Fang Kaen, features a large, square-based chedi typical of Lanna architecture from the 15th century. The temple's viharn, though largely rebuilt, retains some original foundation stones and a significant Buddha image, likely from the early 16th century, in the subduing Mara posture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t12",
-          "name": "Wat Muen Larn",
-          "latitude": 18.788096600000003,
-          "longitude": 98.99208268790247,
-          "verified": false,
-          "factualDescription": "Wat Muen Larn, meaning \"Temple of Ten Million,\" was constructed in 1501 during the reign of King Mueang Kaeo. Its most notable feature is the large, Lanna-style chedi, which houses a Buddha relic. The temple also contains a viharn with a multi-tiered roof, typical of 16th-century Lanna architecture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t27",
-          "name": "Wat Sam Pao",
-          "latitude": 18.788241499999998,
-          "longitude": 98.99057829948987,
-          "verified": false,
-          "factualDescription": "Wat Sam Pao is a small temple, likely dating from the Lanna period, characterized by its modest size and traditional Lanna architectural elements. Its main viharn houses a Buddha image, and a small chedi stands within the temple grounds, typical of smaller community temples from the era.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t16",
-          "name": "Wat Pha Khao",
-          "latitude": 18.7856567,
-          "longitude": 98.99137800677244,
-          "verified": false,
-          "factualDescription": "Wat Phan Khao, also known as Wat Chedi Liam, was founded in 1451 CE by King Tilokaraj. Its most prominent feature is a five-tiered chedi, a common architectural style for Lanna temples of this period, with a square base and niches containing Buddha images. The temple complex also includes a viharn (assembly hall) and an ubosot (ordination hall), typical structures found in 15th-century Lanna Buddhist monasteries.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t0",
-          "name": "Wat Chang Taem",
-          "latitude": 18.78513515,
-          "longitude": 98.98814898994743,
-          "verified": false,
-          "factualDescription": "Wat Chang Taem, founded in 1416 CE by King Sam Fang Kaen, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa) that underwent significant restoration in the 19th century. The temple's name, meaning \"Elephant Painted Temple,\" is believed to derive from murals or sculptures of elephants that once adorned its structures. Its architecture is characteristic of early 15th-century Lanna temple design, emphasizing robust brick construction and intricate stucco work.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t17",
-          "name": "Wat Phan Tao",
-          "latitude": 18.78779125,
-          "longitude": 98.98744462331774,
-          "verified": false,
-          "factualDescription": "Wat Phan Tao, originally built in 1846 as the Ho Kham (royal throne hall) for ruler Mahotaraprathet, was relocated to its current site in 1876. This all-teak structure, 21 meters long and supported by 28 pillars, derives its name, meaning \"thousand kilns,\" from the furnaces used to cast Buddha images. The temple was closed in 2021 for repairs due to insect damage.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t1",
-          "name": "Wat Chedi Luang",
-          "latitude": 18.7871427,
-          "longitude": 98.9867839803562,
-          "verified": false,
-          "factualDescription": "Wat Chedi Luang, founded in 1391 by King Saen Muang Ma for his father's ashes and completed in 1475 under King Tilokarat, originally stood 85 meters tall. It housed the Emerald Buddha from 1468 to 1551, though its upper 30 meters collapsed in a 1545 earthquake, with reconstruction occurring in the 1990s with UNESCO and Japanese support.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t13",
-          "name": "Wat Muen Ngoen Kong",
-          "latitude": 18.78552585,
-          "longitude": 98.98066360692809,
-          "verified": false,
-          "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t22",
-          "name": "Wat Phuak Hong",
-          "latitude": 18.783025,
-          "longitude": 98.98112,
-          "verified": true,
-          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t23",
-          "name": "Wat Puak Taem",
-          "latitude": 18.782998,
-          "longitude": 98.98325,
-          "verified": true,
-          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t19",
-          "name": "Wat Phra Chao Meng Rai",
-          "latitude": 18.78499255,
-          "longitude": 98.98416557358192,
-          "verified": false,
-          "factualDescription": "Wat Phra Chao Meng Rai, founded in 1287 by King Mengrai, is one of Chiang Mai's oldest temples. It features a large, prominent chedi that houses relics and a viharn displaying traditional Lanna architectural elements. The temple's historical significance lies in its direct association with the city's founder.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t18",
-          "name": "Wat Phan Waen",
-          "latitude": 18.783010349999998,
-          "longitude": 98.9857690035494,
-          "verified": false,
-          "factualDescription": "Wat Phan Waen, founded in 1501 CE, is a small temple featuring a Lanna-style ordination hall (ubosot) and a chedi. The temple's name, meaning \"Temple of the Ring,\" is believed to refer to a significant ring once housed here. Its architecture reflects typical 16th-century Lanna temple design, characterized by multi-tiered roofs and intricate wooden carvings.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t7",
-          "name": "Wat Fon Soi",
-          "latitude": 18.7826308,
-          "longitude": 98.98847983936587,
-          "verified": false,
-          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t26",
-          "name": "Wat Sai Moon Muang",
-          "latitude": 18.781959399999998,
-          "longitude": 98.99120555983336,
-          "verified": false,
-          "factualDescription": "Wat Sai Moon Muang, founded in 1500 CE during the reign of King Mueang Kaeo, features a prominent Lanna-style chedi. The temple's viharn houses a revered Buddha image, and its architecture reflects typical 16th-century Northern Thai temple design with multi-tiered roofs and intricate wood carvings.",
-          "hasPreResearchedFacts": false
         }
       ]
     },
-    "improvement": 1.7095440719911008
+    "improvement": 11.373751854613628
   },
   "south": {
     "gate": "Chiang Mai (South)",
     "greedy": {
-      "distance": 7568.633563048548,
+      "distance": 7804.129853243519,
       "route": [
         {
-          "id": "t26",
-          "name": "Wat Sai Moon Muang",
-          "latitude": 18.781959399999998,
-          "longitude": 98.99120555983336,
+          "id": "t18",
+          "name": "Wat Phan Waen",
+          "latitude": 18.783010349999998,
+          "longitude": 98.9857690035494,
           "verified": false,
-          "factualDescription": "Wat Sai Moon Muang, founded in 1500 CE during the reign of King Mueang Kaeo, features a prominent Lanna-style chedi. The temple's viharn houses a revered Buddha image, and its architecture reflects typical 16th-century Northern Thai temple design with multi-tiered roofs and intricate wood carvings.",
+          "factualDescription": "Wat Phan Waen, founded in 1501 CE, is a small temple featuring a Lanna-style ordination hall (ubosot) and a chedi. The temple's name, meaning \"Temple of the Ring,\" is believed to refer to a significant ring once housed here. Its architecture reflects typical 16th-century Lanna temple design, characterized by multi-tiered roofs and intricate wooden carvings.",
           "hasPreResearchedFacts": false
         },
         {
-          "id": "t7",
-          "name": "Wat Fon Soi",
-          "latitude": 18.7826308,
-          "longitude": 98.98847983936587,
-          "verified": false,
-          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
+          "id": "t23",
+          "name": "Wat Puak Taem",
+          "latitude": 18.782998,
+          "longitude": 98.98325,
+          "verified": true,
+          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
           "hasPreResearchedFacts": false
         },
         {
-          "id": "t0",
-          "name": "Wat Chang Taem",
-          "latitude": 18.78513515,
-          "longitude": 98.98814898994743,
+          "id": "t22",
+          "name": "Wat Phuak Hong",
+          "latitude": 18.783025,
+          "longitude": 98.98112,
+          "verified": true,
+          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t13",
+          "name": "Wat Muen Ngoen Kong",
+          "latitude": 18.78552585,
+          "longitude": 98.98066360692809,
           "verified": false,
-          "factualDescription": "Wat Chang Taem, founded in 1416 CE by King Sam Fang Kaen, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa) that underwent significant restoration in the 19th century. The temple's name, meaning \"Elephant Painted Temple,\" is believed to derive from murals or sculptures of elephants that once adorned its structures. Its architecture is characteristic of early 15th-century Lanna temple design, emphasizing robust brick construction and intricate stucco work.",
+          "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t20",
+          "name": "Wat Phra Singh",
+          "latitude": 18.7882068,
+          "longitude": 98.98137728020629,
+          "verified": false,
+          "factualDescription": "Wat Phra Singh, founded in 1345 by King Pha Yu for his father's ashes, was designated a royal temple of the first grade in 1935. Its Viharn Lai Kham features intricate gold leaf work and 1820s murals, while the Ho Trai library dates back to the late 15th century. A notable bronze standing Buddha, cast in 1477, is also housed within the temple grounds.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t21",
+          "name": "Wat Prasat",
+          "latitude": 18.78977975,
+          "longitude": 98.98102562907825,
+          "verified": false,
+          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t29",
+          "name": "Wat Tung Yu",
+          "latitude": 18.78881365,
+          "longitude": 98.98412670351986,
+          "verified": false,
+          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t28",
+          "name": "Wat Si Koet",
+          "latitude": 18.788116600000002,
+          "longitude": 98.98386969283189,
+          "verified": false,
+          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
           "hasPreResearchedFacts": false
         },
         {
@@ -1338,42 +1383,6 @@
           "hasPreResearchedFacts": false
         },
         {
-          "id": "t21",
-          "name": "Wat Prasat",
-          "latitude": 18.78977975,
-          "longitude": 98.98102562907825,
-          "verified": false,
-          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t20",
-          "name": "Wat Phra Singh",
-          "latitude": 18.7882068,
-          "longitude": 98.98137728020629,
-          "verified": false,
-          "factualDescription": "Wat Phra Singh, founded in 1345 by King Pha Yu for his father's ashes, was designated a royal temple of the first grade in 1935. Its Viharn Lai Kham features intricate gold leaf work and 1820s murals, while the Ho Trai library dates back to the late 15th century. A notable bronze standing Buddha, cast in 1477, is also housed within the temple grounds.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t28",
-          "name": "Wat Si Koet",
-          "latitude": 18.788116600000002,
-          "longitude": 98.98386969283189,
-          "verified": false,
-          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t29",
-          "name": "Wat Tung Yu",
-          "latitude": 18.78881365,
-          "longitude": 98.98412670351986,
-          "verified": false,
-          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
-          "hasPreResearchedFacts": false
-        },
-        {
           "id": "t19",
           "name": "Wat Phra Chao Meng Rai",
           "latitude": 18.78499255,
@@ -1383,39 +1392,30 @@
           "hasPreResearchedFacts": false
         },
         {
-          "id": "t23",
-          "name": "Wat Puak Taem",
-          "latitude": 18.782998,
-          "longitude": 98.98325,
-          "verified": true,
-          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
+          "id": "t0",
+          "name": "Wat Chang Taem",
+          "latitude": 18.78513515,
+          "longitude": 98.98814898994743,
+          "verified": false,
+          "factualDescription": "Wat Chang Taem, founded in 1416 CE by King Sam Fang Kaen, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa) that underwent significant restoration in the 19th century. The temple's name, meaning \"Elephant Painted Temple,\" is believed to derive from murals or sculptures of elephants that once adorned its structures. Its architecture is characteristic of early 15th-century Lanna temple design, emphasizing robust brick construction and intricate stucco work.",
           "hasPreResearchedFacts": false
         },
         {
-          "id": "t22",
-          "name": "Wat Phuak Hong",
-          "latitude": 18.783025,
-          "longitude": 98.98112,
-          "verified": true,
-          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
-          "hasPreResearchedFacts": true
+          "id": "t7",
+          "name": "Wat Fon Soi",
+          "latitude": 18.7826308,
+          "longitude": 98.98847983936587,
+          "verified": false,
+          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
+          "hasPreResearchedFacts": false
         },
         {
-          "id": "t13",
-          "name": "Wat Muen Ngoen Kong",
-          "latitude": 18.78552585,
-          "longitude": 98.98066360692809,
+          "id": "t26",
+          "name": "Wat Sai Moon Muang",
+          "latitude": 18.781959399999998,
+          "longitude": 98.99120555983336,
           "verified": false,
-          "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t18",
-          "name": "Wat Phan Waen",
-          "latitude": 18.783010349999998,
-          "longitude": 98.9857690035494,
-          "verified": false,
-          "factualDescription": "Wat Phan Waen, founded in 1501 CE, is a small temple featuring a Lanna-style ordination hall (ubosot) and a chedi. The temple's name, meaning \"Temple of the Ring,\" is believed to refer to a significant ring once housed here. Its architecture reflects typical 16th-century Lanna temple design, characterized by multi-tiered roofs and intricate wooden carvings.",
+          "factualDescription": "Wat Sai Moon Muang, founded in 1500 CE during the reign of King Mueang Kaeo, features a prominent Lanna-style chedi. The temple's viharn houses a revered Buddha image, and its architecture reflects typical 16th-century Northern Thai temple design with multi-tiered roofs and intricate wood carvings.",
           "hasPreResearchedFacts": false
         },
         {
@@ -1430,26 +1430,8 @@
       ]
     },
     "optimized": {
-      "distance": 7010.944023348999,
+      "distance": 7196.603174702301,
       "route": [
-        {
-          "id": "t26",
-          "name": "Wat Sai Moon Muang",
-          "latitude": 18.781959399999998,
-          "longitude": 98.99120555983336,
-          "verified": false,
-          "factualDescription": "Wat Sai Moon Muang, founded in 1500 CE during the reign of King Mueang Kaeo, features a prominent Lanna-style chedi. The temple's viharn houses a revered Buddha image, and its architecture reflects typical 16th-century Northern Thai temple design with multi-tiered roofs and intricate wood carvings.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t7",
-          "name": "Wat Fon Soi",
-          "latitude": 18.7826308,
-          "longitude": 98.98847983936587,
-          "verified": false,
-          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
-          "hasPreResearchedFacts": false
-        },
         {
           "id": "t18",
           "name": "Wat Phan Waen",
@@ -1485,33 +1467,6 @@
           "verified": false,
           "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
           "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t19",
-          "name": "Wat Phra Chao Meng Rai",
-          "latitude": 18.78499255,
-          "longitude": 98.98416557358192,
-          "verified": false,
-          "factualDescription": "Wat Phra Chao Meng Rai, founded in 1287 by King Mengrai, is one of Chiang Mai's oldest temples. It features a large, prominent chedi that houses relics and a viharn displaying traditional Lanna architectural elements. The temple's historical significance lies in its direct association with the city's founder.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t28",
-          "name": "Wat Si Koet",
-          "latitude": 18.788116600000002,
-          "longitude": 98.98386969283189,
-          "verified": false,
-          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t29",
-          "name": "Wat Tung Yu",
-          "latitude": 18.78881365,
-          "longitude": 98.98412670351986,
-          "verified": false,
-          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
-          "hasPreResearchedFacts": false
         },
         {
           "id": "t20",
@@ -1694,12 +1649,57 @@
           "hasPreResearchedFacts": true
         },
         {
+          "id": "t29",
+          "name": "Wat Tung Yu",
+          "latitude": 18.78881365,
+          "longitude": 98.98412670351986,
+          "verified": false,
+          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t28",
+          "name": "Wat Si Koet",
+          "latitude": 18.788116600000002,
+          "longitude": 98.98386969283189,
+          "verified": false,
+          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t19",
+          "name": "Wat Phra Chao Meng Rai",
+          "latitude": 18.78499255,
+          "longitude": 98.98416557358192,
+          "verified": false,
+          "factualDescription": "Wat Phra Chao Meng Rai, founded in 1287 by King Mengrai, is one of Chiang Mai's oldest temples. It features a large, prominent chedi that houses relics and a viharn displaying traditional Lanna architectural elements. The temple's historical significance lies in its direct association with the city's founder.",
+          "hasPreResearchedFacts": false
+        },
+        {
           "id": "t0",
           "name": "Wat Chang Taem",
           "latitude": 18.78513515,
           "longitude": 98.98814898994743,
           "verified": false,
           "factualDescription": "Wat Chang Taem, founded in 1416 CE by King Sam Fang Kaen, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa) that underwent significant restoration in the 19th century. The temple's name, meaning \"Elephant Painted Temple,\" is believed to derive from murals or sculptures of elephants that once adorned its structures. Its architecture is characteristic of early 15th-century Lanna temple design, emphasizing robust brick construction and intricate stucco work.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t7",
+          "name": "Wat Fon Soi",
+          "latitude": 18.7826308,
+          "longitude": 98.98847983936587,
+          "verified": false,
+          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t26",
+          "name": "Wat Sai Moon Muang",
+          "latitude": 18.781959399999998,
+          "longitude": 98.99120555983336,
+          "verified": false,
+          "factualDescription": "Wat Sai Moon Muang, founded in 1500 CE during the reign of King Mueang Kaeo, features a prominent Lanna-style chedi. The temple's viharn houses a revered Buddha image, and its architecture reflects typical 16th-century Northern Thai temple design with multi-tiered roofs and intricate wood carvings.",
           "hasPreResearchedFacts": false
         },
         {
@@ -1713,84 +1713,48 @@
         }
       ]
     },
-    "improvement": 7.368430973092578
+    "improvement": 7.784681828285072
   },
   "west": {
     "gate": "Suan Dok (West)",
     "greedy": {
-      "distance": 7921.3404642855485,
+      "distance": 7595.723721265009,
       "route": [
         {
-          "id": "t22",
-          "name": "Wat Phuak Hong",
-          "latitude": 18.783025,
-          "longitude": 98.98112,
-          "verified": true,
-          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
+          "id": "t21",
+          "name": "Wat Prasat",
+          "latitude": 18.78977975,
+          "longitude": 98.98102562907825,
+          "verified": false,
+          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
           "hasPreResearchedFacts": true
         },
         {
-          "id": "t23",
-          "name": "Wat Puak Taem",
-          "latitude": 18.782998,
-          "longitude": 98.98325,
-          "verified": true,
-          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t19",
-          "name": "Wat Phra Chao Meng Rai",
-          "latitude": 18.78499255,
-          "longitude": 98.98416557358192,
+          "id": "t20",
+          "name": "Wat Phra Singh",
+          "latitude": 18.7882068,
+          "longitude": 98.98137728020629,
           "verified": false,
-          "factualDescription": "Wat Phra Chao Meng Rai, founded in 1287 by King Mengrai, is one of Chiang Mai's oldest temples. It features a large, prominent chedi that houses relics and a viharn displaying traditional Lanna architectural elements. The temple's historical significance lies in its direct association with the city's founder.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t18",
-          "name": "Wat Phan Waen",
-          "latitude": 18.783010349999998,
-          "longitude": 98.9857690035494,
-          "verified": false,
-          "factualDescription": "Wat Phan Waen, founded in 1501 CE, is a small temple featuring a Lanna-style ordination hall (ubosot) and a chedi. The temple's name, meaning \"Temple of the Ring,\" is believed to refer to a significant ring once housed here. Its architecture reflects typical 16th-century Lanna temple design, characterized by multi-tiered roofs and intricate wooden carvings.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t7",
-          "name": "Wat Fon Soi",
-          "latitude": 18.7826308,
-          "longitude": 98.98847983936587,
-          "verified": false,
-          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t0",
-          "name": "Wat Chang Taem",
-          "latitude": 18.78513515,
-          "longitude": 98.98814898994743,
-          "verified": false,
-          "factualDescription": "Wat Chang Taem, founded in 1416 CE by King Sam Fang Kaen, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa) that underwent significant restoration in the 19th century. The temple's name, meaning \"Elephant Painted Temple,\" is believed to derive from murals or sculptures of elephants that once adorned its structures. Its architecture is characteristic of early 15th-century Lanna temple design, emphasizing robust brick construction and intricate stucco work.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t1",
-          "name": "Wat Chedi Luang",
-          "latitude": 18.7871427,
-          "longitude": 98.9867839803562,
-          "verified": false,
-          "factualDescription": "Wat Chedi Luang, founded in 1391 by King Saen Muang Ma for his father's ashes and completed in 1475 under King Tilokarat, originally stood 85 meters tall. It housed the Emerald Buddha from 1468 to 1551, though its upper 30 meters collapsed in a 1545 earthquake, with reconstruction occurring in the 1990s with UNESCO and Japanese support.",
+          "factualDescription": "Wat Phra Singh, founded in 1345 by King Pha Yu for his father's ashes, was designated a royal temple of the first grade in 1935. Its Viharn Lai Kham features intricate gold leaf work and 1820s murals, while the Ho Trai library dates back to the late 15th century. A notable bronze standing Buddha, cast in 1477, is also housed within the temple grounds.",
           "hasPreResearchedFacts": true
         },
         {
-          "id": "t17",
-          "name": "Wat Phan Tao",
-          "latitude": 18.78779125,
-          "longitude": 98.98744462331774,
+          "id": "t28",
+          "name": "Wat Si Koet",
+          "latitude": 18.788116600000002,
+          "longitude": 98.98386969283189,
           "verified": false,
-          "factualDescription": "Wat Phan Tao, originally built in 1846 as the Ho Kham (royal throne hall) for ruler Mahotaraprathet, was relocated to its current site in 1876. This all-teak structure, 21 meters long and supported by 28 pillars, derives its name, meaning \"thousand kilns,\" from the furnaces used to cast Buddha images. The temple was closed in 2021 for repairs due to insect damage.",
-          "hasPreResearchedFacts": true
+          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t29",
+          "name": "Wat Tung Yu",
+          "latitude": 18.78881365,
+          "longitude": 98.98412670351986,
+          "verified": false,
+          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
+          "hasPreResearchedFacts": false
         },
         {
           "id": "t24",
@@ -1937,48 +1901,84 @@
           "hasPreResearchedFacts": false
         },
         {
-          "id": "t21",
-          "name": "Wat Prasat",
-          "latitude": 18.78977975,
-          "longitude": 98.98102562907825,
-          "verified": false,
-          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t20",
-          "name": "Wat Phra Singh",
-          "latitude": 18.7882068,
-          "longitude": 98.98137728020629,
-          "verified": false,
-          "factualDescription": "Wat Phra Singh, founded in 1345 by King Pha Yu for his father's ashes, was designated a royal temple of the first grade in 1935. Its Viharn Lai Kham features intricate gold leaf work and 1820s murals, while the Ho Trai library dates back to the late 15th century. A notable bronze standing Buddha, cast in 1477, is also housed within the temple grounds.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t28",
-          "name": "Wat Si Koet",
-          "latitude": 18.788116600000002,
-          "longitude": 98.98386969283189,
-          "verified": false,
-          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t29",
-          "name": "Wat Tung Yu",
-          "latitude": 18.78881365,
-          "longitude": 98.98412670351986,
-          "verified": false,
-          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
-          "hasPreResearchedFacts": false
-        },
-        {
           "id": "t13",
           "name": "Wat Muen Ngoen Kong",
           "latitude": 18.78552585,
           "longitude": 98.98066360692809,
           "verified": false,
           "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t22",
+          "name": "Wat Phuak Hong",
+          "latitude": 18.783025,
+          "longitude": 98.98112,
+          "verified": true,
+          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t23",
+          "name": "Wat Puak Taem",
+          "latitude": 18.782998,
+          "longitude": 98.98325,
+          "verified": true,
+          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t19",
+          "name": "Wat Phra Chao Meng Rai",
+          "latitude": 18.78499255,
+          "longitude": 98.98416557358192,
+          "verified": false,
+          "factualDescription": "Wat Phra Chao Meng Rai, founded in 1287 by King Mengrai, is one of Chiang Mai's oldest temples. It features a large, prominent chedi that houses relics and a viharn displaying traditional Lanna architectural elements. The temple's historical significance lies in its direct association with the city's founder.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t18",
+          "name": "Wat Phan Waen",
+          "latitude": 18.783010349999998,
+          "longitude": 98.9857690035494,
+          "verified": false,
+          "factualDescription": "Wat Phan Waen, founded in 1501 CE, is a small temple featuring a Lanna-style ordination hall (ubosot) and a chedi. The temple's name, meaning \"Temple of the Ring,\" is believed to refer to a significant ring once housed here. Its architecture reflects typical 16th-century Lanna temple design, characterized by multi-tiered roofs and intricate wooden carvings.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t7",
+          "name": "Wat Fon Soi",
+          "latitude": 18.7826308,
+          "longitude": 98.98847983936587,
+          "verified": false,
+          "factualDescription": "Wat Fon Soi, established in 1500 CE, is a small temple featuring a Lanna-style viharn and a modest chedi. The temple's name, meaning \"temple of the falling rain,\" is believed to derive from a legend involving a revered Buddha image. While specific details about its original builder are not definitively documented, its architecture is consistent with Lanna temples of the early 16th century.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t0",
+          "name": "Wat Chang Taem",
+          "latitude": 18.78513515,
+          "longitude": 98.98814898994743,
+          "verified": false,
+          "factualDescription": "Wat Chang Taem, founded in 1416 CE by King Sam Fang Kaen, features a Lanna-style *ubosot* (ordination hall) and a prominent *chedi* (stupa) that underwent significant restoration in the 19th century. The temple's name, meaning \"Elephant Painted Temple,\" is believed to derive from murals or sculptures of elephants that once adorned its structures. Its architecture is characteristic of early 15th-century Lanna temple design, emphasizing robust brick construction and intricate stucco work.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t1",
+          "name": "Wat Chedi Luang",
+          "latitude": 18.7871427,
+          "longitude": 98.9867839803562,
+          "verified": false,
+          "factualDescription": "Wat Chedi Luang, founded in 1391 by King Saen Muang Ma for his father's ashes and completed in 1475 under King Tilokarat, originally stood 85 meters tall. It housed the Emerald Buddha from 1468 to 1551, though its upper 30 meters collapsed in a 1545 earthquake, with reconstruction occurring in the 1990s with UNESCO and Japanese support.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t17",
+          "name": "Wat Phan Tao",
+          "latitude": 18.78779125,
+          "longitude": 98.98744462331774,
+          "verified": false,
+          "factualDescription": "Wat Phan Tao, originally built in 1846 as the Ho Kham (royal throne hall) for ruler Mahotaraprathet, was relocated to its current site in 1876. This all-teak structure, 21 meters long and supported by 28 pillars, derives its name, meaning \"thousand kilns,\" from the furnaces used to cast Buddha images. The temple was closed in 2021 for repairs due to insect damage.",
           "hasPreResearchedFacts": true
         },
         {
@@ -2002,52 +2002,16 @@
       ]
     },
     "optimized": {
-      "distance": 7349.142417956978,
+      "distance": 7510.726427196794,
       "route": [
         {
-          "id": "t22",
-          "name": "Wat Phuak Hong",
-          "latitude": 18.783025,
-          "longitude": 98.98112,
-          "verified": true,
-          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
+          "id": "t21",
+          "name": "Wat Prasat",
+          "latitude": 18.78977975,
+          "longitude": 98.98102562907825,
+          "verified": false,
+          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
           "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t23",
-          "name": "Wat Puak Taem",
-          "latitude": 18.782998,
-          "longitude": 98.98325,
-          "verified": true,
-          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t13",
-          "name": "Wat Muen Ngoen Kong",
-          "latitude": 18.78552585,
-          "longitude": 98.98066360692809,
-          "verified": false,
-          "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t28",
-          "name": "Wat Si Koet",
-          "latitude": 18.788116600000002,
-          "longitude": 98.98386969283189,
-          "verified": false,
-          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
-          "hasPreResearchedFacts": false
-        },
-        {
-          "id": "t29",
-          "name": "Wat Tung Yu",
-          "latitude": 18.78881365,
-          "longitude": 98.98412670351986,
-          "verified": false,
-          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
-          "hasPreResearchedFacts": false
         },
         {
           "id": "t20",
@@ -2056,15 +2020,6 @@
           "longitude": 98.98137728020629,
           "verified": false,
           "factualDescription": "Wat Phra Singh, founded in 1345 by King Pha Yu for his father's ashes, was designated a royal temple of the first grade in 1935. Its Viharn Lai Kham features intricate gold leaf work and 1820s murals, while the Ho Trai library dates back to the late 15th century. A notable bronze standing Buddha, cast in 1477, is also housed within the temple grounds.",
-          "hasPreResearchedFacts": true
-        },
-        {
-          "id": "t21",
-          "name": "Wat Prasat",
-          "latitude": 18.78977975,
-          "longitude": 98.98102562907825,
-          "verified": false,
-          "factualDescription": "Wat Prasat, founded in the late 15th or early 16th century and confirmed by a stone inscription at Wat Tapotaram during King Yotchiangrai's reign, features a classic Lanna-style wooden viharn built in 1823. This temple is notable for its unique \"Ku Lai\" meditation chamber configuration, a bronze Buddha image from 1590, and Laai Kham gold leaf murals.",
           "hasPreResearchedFacts": true
         },
         {
@@ -2212,22 +2167,49 @@
           "hasPreResearchedFacts": true
         },
         {
-          "id": "t17",
-          "name": "Wat Phan Tao",
-          "latitude": 18.78779125,
-          "longitude": 98.98744462331774,
+          "id": "t29",
+          "name": "Wat Tung Yu",
+          "latitude": 18.78881365,
+          "longitude": 98.98412670351986,
           "verified": false,
-          "factualDescription": "Wat Phan Tao, originally built in 1846 as the Ho Kham (royal throne hall) for ruler Mahotaraprathet, was relocated to its current site in 1876. This all-teak structure, 21 meters long and supported by 28 pillars, derives its name, meaning \"thousand kilns,\" from the furnaces used to cast Buddha images. The temple was closed in 2021 for repairs due to insect damage.",
+          "factualDescription": "Wat Tung Yu, founded in 1493 by King Tilokaraj, features a Lanna-style ordination hall (ubosot) with a multi-tiered roof and a prominent gilded chedi. The temple is known for its large, seated Buddha image in the Maravijaya posture, characteristic of late 15th-century Lanna sculpture.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t28",
+          "name": "Wat Si Koet",
+          "latitude": 18.788116600000002,
+          "longitude": 98.98386969283189,
+          "verified": false,
+          "factualDescription": "Wat Si Koet, founded in 1411 during the reign of King Sam Fang Kaen, features a Lanna-style viharn and a large chedi. The temple's name, meaning \"temple of the city pillar,\" suggests its historical proximity to the original city pillar of Chiang Mai. Its architecture is characteristic of early 15th-century Lanna temple construction.",
+          "hasPreResearchedFacts": false
+        },
+        {
+          "id": "t13",
+          "name": "Wat Muen Ngoen Kong",
+          "latitude": 18.78552585,
+          "longitude": 98.98066360692809,
+          "verified": false,
+          "factualDescription": "Wat Muen Ngoen Kong, founded in the 14th century, is known as the \"temple of ten thousand piles of money\" or \"millionaire.\" It features a large wooden Lanna-style viharn, a golden chedi encircled by smaller chedis depicting Lanna calendar animals, and houses a large gold reclining Buddha. The temple also served as a filming location for the Japanese movie \"Pool.\"",
           "hasPreResearchedFacts": true
         },
         {
-          "id": "t1",
-          "name": "Wat Chedi Luang",
-          "latitude": 18.7871427,
-          "longitude": 98.9867839803562,
-          "verified": false,
-          "factualDescription": "Wat Chedi Luang, founded in 1391 by King Saen Muang Ma for his father's ashes and completed in 1475 under King Tilokarat, originally stood 85 meters tall. It housed the Emerald Buddha from 1468 to 1551, though its upper 30 meters collapsed in a 1545 earthquake, with reconstruction occurring in the 1990s with UNESCO and Japanese support.",
+          "id": "t22",
+          "name": "Wat Phuak Hong",
+          "latitude": 18.783025,
+          "longitude": 98.98112,
+          "verified": true,
+          "factualDescription": "Wat Phuak Hong, founded in the late 15th century, is distinguished by its 7-tiered circular chedi, an unusual architectural feature for North Thailand, possibly reflecting Yunnanese influence, and containing 52 Buddha niches. The temple houses the Bronze Thai Ping Buddha, cast in 1494, and its viharn was rebuilt in the early 19th century. The temple's name translates to \"flight of swans\" or refers to \"lower ranking nobles.\"",
           "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t23",
+          "name": "Wat Puak Taem",
+          "latitude": 18.782998,
+          "longitude": 98.98325,
+          "verified": true,
+          "factualDescription": "Wat Puak Taem, founded in 1481 during the reign of King Tilokaraj, is an example of early Lanna temple architecture. Its main chedi is a square-based structure, typical of 15th-century Lanna stupas, and the viharn houses a principal Buddha image in the Maravijaya (subduing Mara) posture.",
+          "hasPreResearchedFacts": false
         },
         {
           "id": "t19",
@@ -2266,6 +2248,24 @@
           "hasPreResearchedFacts": false
         },
         {
+          "id": "t1",
+          "name": "Wat Chedi Luang",
+          "latitude": 18.7871427,
+          "longitude": 98.9867839803562,
+          "verified": false,
+          "factualDescription": "Wat Chedi Luang, founded in 1391 by King Saen Muang Ma for his father's ashes and completed in 1475 under King Tilokarat, originally stood 85 meters tall. It housed the Emerald Buddha from 1468 to 1551, though its upper 30 meters collapsed in a 1545 earthquake, with reconstruction occurring in the 1990s with UNESCO and Japanese support.",
+          "hasPreResearchedFacts": true
+        },
+        {
+          "id": "t17",
+          "name": "Wat Phan Tao",
+          "latitude": 18.78779125,
+          "longitude": 98.98744462331774,
+          "verified": false,
+          "factualDescription": "Wat Phan Tao, originally built in 1846 as the Ho Kham (royal throne hall) for ruler Mahotaraprathet, was relocated to its current site in 1876. This all-teak structure, 21 meters long and supported by 28 pillars, derives its name, meaning \"thousand kilns,\" from the furnaces used to cast Buddha images. The temple was closed in 2021 for repairs due to insect damage.",
+          "hasPreResearchedFacts": true
+        },
+        {
           "id": "t16",
           "name": "Wat Pha Khao",
           "latitude": 18.7856567,
@@ -2285,6 +2285,6 @@
         }
       ]
     },
-    "improvement": 7.2235002258570296
+    "improvement": 1.1190150825293443
   }
 }
