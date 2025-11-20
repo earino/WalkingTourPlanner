@@ -123,6 +123,7 @@ document.addEventListener('touchmove', e => {
   const delta = startY - e.touches[0].clientY;
   sheetHeight = Math.max(COLLAPSED, Math.min(EXPANDED, startH + delta));
   sheet.style.height = sheetHeight + 'px';
+  updateMapSize();
 });
 
 document.addEventListener('touchend', () => {
@@ -131,7 +132,15 @@ document.addEventListener('touchend', () => {
   sheet.style.transition = 'height 0.3s ease-out';
   sheetHeight = sheetHeight > (COLLAPSED + EXPANDED) / 2 ? EXPANDED : COLLAPSED;
   sheet.style.height = sheetHeight + 'px';
+  updateMapSize();
 });
+
+function updateMapSize() {
+  const mapDiv = document.getElementById('map');
+  const currentSheetHeight = parseInt(sheet.style.height) || COLLAPSED;
+  mapDiv.style.height = 'calc(100vh - ' + currentSheetHeight + 'px)';
+  map.invalidateSize();
+}
 
 function selectGate(gate) {
   currentGate = gate;
@@ -226,14 +235,9 @@ function updateMapCenter(idx, shouldScroll = true) {
   const tour = TOURS[currentGate];
   const temple = tour.temples[idx];
 
-  // Get current sheet height
-  const currentSheetHeight = parseInt(sheet.style.height) || COLLAPSED;
-
-  // Use flyTo with padding to account for bottom sheet
-  map.flyTo([temple.latitude, temple.longitude], 16, {
-    animate: true,
-    duration: 0.5,
-    paddingBottomRight: [0, currentSheetHeight]
+  // Just center normally - map container is already sized to visible area
+  map.setView([temple.latitude, temple.longitude], 16, {
+    animate: true
   });
 
   // Optionally scroll list to card
