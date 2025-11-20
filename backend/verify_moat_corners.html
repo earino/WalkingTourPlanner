@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiang Mai Old Town Moat - Corner Verification</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+        .info-panel {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            max-width: 300px;
+        }
+        .info-panel h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .corner-info {
+            font-size: 12px;
+            margin: 5px 0;
+            padding: 5px;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+        .corner-info strong {
+            display: block;
+            color: #666;
+        }
+        .dimensions {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="info-panel">
+        <h3>🏛️ Chiang Mai Old Town Moat</h3>
+        <div class="corner-info" style="background: #e3f2fd;">
+            <strong>NW - Hua Lin Corner</strong>
+            18.795672° N, 98.978594° E
+        </div>
+        <div class="corner-info" style="background: #fff3e0;">
+            <strong>NE - Si Phum Corner</strong>
+            18.795250° N, 98.993611° E
+        </div>
+        <div class="corner-info" style="background: #fce4ec;">
+            <strong>SE - Katam Corner</strong>
+            18.781306° N, 98.992736° E
+        </div>
+        <div class="corner-info" style="background: #f1f8e9;">
+            <strong>SW - Ku Hueang Corner</strong>
+            18.781625° N, 98.977986° E
+        </div>
+        <div class="dimensions">
+            <strong>Bounding Box:</strong><br>
+            North: 18.795672°<br>
+            South: 18.781306°<br>
+            East: 98.993611°<br>
+            West: 98.977986°<br>
+            <br>
+            <strong>Approx Size:</strong><br>
+            Width: ~1.55 km<br>
+            Height: ~1.60 km
+        </div>
+    </div>
+    <div id="map"></div>
+
+    <script>
+        // Initialize map centered on Chiang Mai Old Town
+        const map = L.map('map').setView([18.7883, 98.9853], 15);
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors',
+            maxZoom: 19
+        }).addTo(map);
+
+        // Define the four corners
+        const corners = {
+            northwest: {
+                lat: 18.795672,
+                lon: 98.978594,
+                name: 'Hua Lin Corner',
+                fullName: 'NW - Hua Lin Corner (Jaeng Hua Rin)',
+                color: '#2196F3'
+            },
+            northeast: {
+                lat: 18.795250,
+                lon: 98.993611,
+                name: 'Si Phum Corner',
+                fullName: 'NE - Si Phum Corner (Jaeng Si Phum)',
+                color: '#FF9800'
+            },
+            southeast: {
+                lat: 18.781306,
+                lon: 98.992736,
+                name: 'Katam Corner',
+                fullName: 'SE - Katam Corner (Jaeng Katam)',
+                color: '#E91E63'
+            },
+            southwest: {
+                lat: 18.781625,
+                lon: 98.977986,
+                name: 'Ku Hueang Corner',
+                fullName: 'SW - Ku Hueang Corner (Jaeng Ku Hueang)',
+                color: '#8BC34A'
+            }
+        };
+
+        // Add corner markers
+        Object.entries(corners).forEach(([key, corner]) => {
+            // Create custom icon
+            const icon = L.divIcon({
+                className: 'custom-marker',
+                html: `<div style="background-color: ${corner.color}; width: 20px; height: 20px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.3);"></div>`,
+                iconSize: [20, 20],
+                iconAnchor: [10, 10]
+            });
+
+            // Add marker
+            L.marker([corner.lat, corner.lon], { icon: icon })
+                .bindPopup(`
+                    <strong>${corner.fullName}</strong><br>
+                    Lat: ${corner.lat.toFixed(6)}°<br>
+                    Lon: ${corner.lon.toFixed(6)}°
+                `)
+                .addTo(map);
+        });
+
+        // Draw the moat rectangle
+        const moatBounds = [
+            [corners.northwest.lat, corners.northwest.lon],
+            [corners.northeast.lat, corners.northeast.lon],
+            [corners.southeast.lat, corners.southeast.lon],
+            [corners.southwest.lat, corners.southwest.lon],
+            [corners.northwest.lat, corners.northwest.lon] // Close the polygon
+        ];
+
+        L.polygon(moatBounds, {
+            color: '#2196F3',
+            weight: 3,
+            opacity: 0.8,
+            fillColor: '#2196F3',
+            fillOpacity: 0.1
+        }).addTo(map);
+
+        // Add a rectangle showing the bounding box
+        L.rectangle([
+            [18.781306, 98.977986], // SW corner
+            [18.795672, 98.993611]  // NE corner
+        ], {
+            color: '#FF5722',
+            weight: 2,
+            opacity: 0.5,
+            fillOpacity: 0.05,
+            dashArray: '5, 10'
+        }).bindPopup('Bounding Box<br>Used for filtering temples').addTo(map);
+
+        // Calculate and log dimensions
+        const latDiff = 18.795672 - 18.781306; // degrees
+        const lonDiff = 98.993611 - 98.977986; // degrees
+
+        // Convert to km (rough approximation)
+        const kmPerDegreeLat = 111.32;
+        const kmPerDegreeLon = 111.32 * Math.cos(18.788 * Math.PI / 180);
+
+        const heightKm = latDiff * kmPerDegreeLat;
+        const widthKm = lonDiff * kmPerDegreeLon;
+
+        console.log('Moat Dimensions:');
+        console.log('Width:', widthKm.toFixed(3), 'km');
+        console.log('Height:', heightKm.toFixed(3), 'km');
+    </script>
+</body>
+</html>
