@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>Chiang Mai Temple Tour</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
@@ -119,6 +120,7 @@ const TOURS = {"north":{"gate":"Chang Phuak (North)","temples":[{"id":"t11","nam
 let currentGate = null;
 let map, routeLayer, markerLayer;
 let sheetHeight = 200;
+let visitedTemples = JSON.parse(localStorage.getItem('visitedTemples') || '{}');
 
 map = L.map('map', { zoomControl: true, attributionControl: false }).setView([18.7883, 98.9853], 14);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
